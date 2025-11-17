@@ -1,0 +1,222 @@
+/* 1DES design tokens as CSS variables (usable outside Tailwind) */
+:root{
+  --c-teal:#00A7A7;
+  --c-navy:#0B1C24;
+  --c-aqua:#14B8A6;
+  --c-steel:#8CA3AF;
+  --c-white:#FFFFFF;
+  --c-ivory:#F8FAFB;
+  --c-charcoal:#1C1F23;
+  --c-amber:#ECA72C;
+
+  --outer-margin-min:8vw;   /* 8–10% outer margins; start at 8 */
+  --max-text:70ch;
+
+  --scrim-dark:linear-gradient(180deg, rgba(11,28,36,.0) 0%, rgba(11,28,36,.55) 50%, rgba(11,28,36,.75) 100%);
+}
+
+/* Base */
+html,body{height:100%}
+.drawer a{ display:block; padding:.5rem .25rem; color: rgba(255,255,255,.9); }
+
+/* Drawer */
+.drawer{
+  position: fixed;
+  top: 56px; /* just below header */
+  right: 0; width: min(340px, 92vw);
+  height: calc(100dvh - 56px);
+  background: rgba(15,20,24,.9);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255,255,255,.08);
+  transform: translateX(100%);
+  transition: transform .35s ease;
+  z-index: 45;
+  color: white;
+}
+.drawer.open{ transform: translateX(0); }
+
+/* Slides */
+.slide{
+  position: relative;
+  min-height: 100dvh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.slide .scrim{
+  position:absolute; inset:0;
+  background: var(--scrim-dark);
+  pointer-events:none;
+}
+.slide-inner{
+  position: relative;
+  z-index: 1;
+  margin-left: var(--outer-margin-min);
+  margin-right: var(--outer-margin-min);
+  padding-top: clamp(6rem, 12vh, 10rem);
+  padding-bottom: clamp(3rem, 8vh, 6rem);
+  max-width: 1200px;
+}
+.section-kicker{
+  font-family: Rajdhani, ui-sans-serif;
+  letter-spacing: .06em;
+  color: var(--c-aqua);
+  text-transform: uppercase;
+  opacity: .95;
+}
+.section-title{
+  font-family: Rajdhani, ui-sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-top: .25rem;
+}
+
+/* Cards */
+.card{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+}
+.card-title{
+  font-family: Rajdhani, ui-sans-serif;
+  font-size: 1.125rem;
+  color: var(--c-white);
+}
+.card-body{
+  color: rgba(255,255,255,.9);
+  font-size: .95rem;
+}
+
+/* Buttons */
+.btn-primary{
+  display:inline-flex; align-items:center; gap:.5rem;
+  background: var(--c-teal); color:#051316;
+  padding:.75rem 1rem; border-radius: .75rem;
+  font-weight:600;
+}
+.btn-primary:hover{ filter: brightness(1.05); }
+.btn-ghost{
+  display:inline-flex; align-items:center;
+  padding:.7rem 1rem;
+  border-radius:.75rem;
+  color:white; border:1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+}
+.btn-ghost:hover{ background: rgba(255,255,255,.1); }
+
+/* Fixed pager */
+#pager .pager-btn{
+  padding: .55rem .9rem; border-radius: .7rem;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06); color: white;
+  transition: background .2s ease;
+}
+#pager .pager-btn:hover{ background: rgba(255,255,255,.1); }
+
+/* Scroll snap */
+#deck{ scroll-snap-type: y mandatory; }
+.slide{ scroll-snap-align: start; }
+
+/* Background bindings (map to your files) */
+.slide[data-bg="1"]{ background-image: url('1-bg.jpg'); }
+.slide[data-bg="2"]{ background-image: url('2-bg.jpg'); }
+.slide[data-bg="3"]{ background-image: url('3-bg.jpg'); }
+.slide[data-bg="4"]{ background-image: url('4-bg.jpg'); } /* spare */
+
+/* Reveals with reduced-motion awareness */
+.reveal{ opacity:0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible{ opacity:1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
+}
+
+/* Mobile banner show helper */
+@media (max-width: 1023.98px){
+  #mobileBanner.show{ display:block }
+}
+
+
+/* === Global slide rhythm & typography (ADD THIS) ========================= */
+
+/* Grid rhythm: 60% content / 40% visual on desktops */
+.slide-grid{
+  display:grid;
+  grid-template-columns: minmax(0,0.6fr) minmax(0,0.4fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+}
+@media (max-width: 1024px){
+  .slide-grid{ grid-template-columns: 1fr; }
+}
+
+/* Column helpers */
+.content-col{ max-width: 70ch; }
+.visual-col{ align-self: start; }
+
+/* Vertical rhythm: consistent top/bottom breathing room for headings */
+.vr-top{ padding-top: clamp(4rem, 10vh, 8rem); }
+.vr-bottom{ padding-bottom: clamp(2rem, 8vh, 5rem); }
+
+/* Type scale (display + body) */
+:root{
+  --fs-h1: clamp(2.4rem, 5vw, 3.8rem);
+  --fs-h2: clamp(1.8rem, 3.6vw, 2.6rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-body: 1.125rem;
+  --fs-small: .9rem;
+}
+.h1{
+  font-family: Rajdhani, ui-sans-serif;
+  font-weight: 600;
+  font-size: var(--fs-h1);
+  line-height: 1.1;
+  color: var(--c-white);
+}
+.h2{
+  font-family: Rajdhani, ui-sans-serif;
+  font-weight: 600;
+  font-size: var(--fs-h2);
+  line-height: 1.15;
+  color: var(--c-aqua);
+}
+.h3{
+  font-family: Rajdhani, ui-sans-serif;
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: 1.25;
+  color: var(--c-white);
+}
+.lead{ font-size: var(--fs-body); color: var(--c-steel); }
+.caption{ font-size: var(--fs-small); color: color-mix(in oklab, var(--c-steel) 85%, var(--c-white)); }
+
+/* Generic panel (for charts/metrics on the right) */
+.panel{
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(6px);
+  padding: clamp(1rem, 2.5vw, 1.25rem);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* Metric chip + bar system (optional, reuse anywhere) */
+.metric{
+  display:grid; gap:.25rem;
+  padding:.6rem .75rem;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  border-radius: 12px;
+}
+.metric .value{ font-weight: 600; color: var(--c-white); }
+.metric .label{ font-size: .8rem; color: var(--c-steel); }
+
+.bar{ height:.7rem; width:100%; background: rgba(255,255,255,.10); border-radius:999px; overflow:hidden; }
+.bar-fill{ height:100%; background: rgba(255,255,255,.65); border-radius:999px; }
+
+/* Bottom-left hook style (consistent across slides) */
+.slide-hook{
+  position:absolute; left: var(--outer-margin-min);
+  bottom: clamp(1.5rem, 8vh, 3rem);
+  max-width: 70ch;
+}

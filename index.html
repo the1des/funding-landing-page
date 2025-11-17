@@ -1,0 +1,1802 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1DES — Adaptive AI Trading Platform | Investor Deck</title>
+  <meta name="description" content="1DES is an adaptive AI trading platform built over five years. Explore our investor deck: market opportunity, product, traction, team, and funding plan.">
+  <meta name="keywords" content="1DES, AI trading, algorithmic trading, adaptive trading platform, crypto trading AI, event-driven architecture, investor deck, pre-seed startup, machine learning trading, automated trading, trading signals, fintech startup, trading automation, ML models, crypto investors">
+  <link rel="canonical" href="https://funding.1des.com/">
+  <meta property="og:title" content="1DES — Adaptive AI Trading Platform | Investor Deck">
+  <meta property="og:description" content="Five years of R&D distilled into an adaptive, event-driven AI trading platform. See the investor deck for product, traction, team, and funding plans.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://funding.1des.com/">
+  <meta property="og:image" content="https://funding.1des.com/1-bg.jpg">
+  <meta property="og:image:alt" content="1DES adaptive AI trading platform investor deck preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="1DES — Adaptive AI Trading Platform | Investor Deck">
+  <meta name="twitter:description" content="Learn how 1DES brings adaptive AI trading to everyone: product, technology, traction, and funding details inside.">
+  <meta name="twitter:image" content="https://funding.1des.com/1-bg.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            display: ['Rajdhani', 'ui-sans-serif', 'system-ui'],
+          },
+          colors: {
+            teal1: '#00A7A7',
+            navy:  '#0B1C24',
+            aqua:  '#14B8A6',
+            steel: '#8CA3AF',
+            ivory: '#F8FAFB',
+            charcoal: '#1C1F23',
+            amber1: '#ECA72C',
+            white: '#FFFFFF',
+          },
+          boxShadow: {
+            soft: '0 0 0 1px rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Our tiny layer -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="h-full text-white bg-navy">
+  <!-- Sticky top bar with logo + Sections -->
+  <header id="stickyNav" class="fixed top-0 inset-x-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-black/20 bg-black/40 border-b border-white/10">
+    <div class="mx-auto max-w-screen-2xl px-6 py-3 flex items-center gap-4">
+      <!-- Replace src with your actual logo file; kept alt for a11y -->
+      <a href="#cover" class="flex items-center gap-2" aria-label="Go to cover">
+        <img src="https://1des.com/images/1des-logo-flat.svg" alt="1DES" class="h-7 md:h-8 w-auto select-none" />
+      </a>
+
+      <button id="drawerToggle" class="ml-auto inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal1" aria-controls="sectionDrawer" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" class="opacity-90" aria-hidden="true"><path fill="currentColor" d="M4 6h16v2H4zm0 5h10v2H4zm0 5h16v2H4z"/></svg>
+        <span class="hidden sm:inline">Sections</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Right drawer with section list -->
+  <aside id="sectionDrawer" class="drawer" aria-hidden="true">
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-display text-xl">Deck Sections</h2>
+        <button id="drawerClose" class="p-2 rounded-md bg-white/10 hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal1" aria-label="Close panel">✕</button>
+      </div>
+      <ol class="space-y-2 text-sm">
+        <li><a class="drawer-link" href="#cover">01 Cover</a></li>
+        <li><a class="drawer-link" href="#problem-opportunity">02 Problem / Opportunity</a></li>
+        <li><a class="drawer-link" href="#solution">03 Solution</a></li>
+        <li><a class="drawer-link" href="#product-overview">04 Product Overview</a></li>
+        <li><a class="drawer-link" href="#technology-moat">05 Technology & Moat</a></li>
+        <li><a class="drawer-link" href="#market-opportunity">06 Market & Opportunity</a></li>
+        <li><a class="drawer-link" href="#business-model">07 Business Model</a></li>
+        <li><a class="drawer-link" href="#traction-validation">08 Traction & Validation</a></li>
+        <li><a class="drawer-link" href="#gtm">09 Go-to-Market Strategy</a></li>
+        <li><a class="drawer-link" href="#roadmap">10 Roadmap / Road to Beta</a></li>
+        <li><a class="drawer-link" href="#competition">11 Competition Landscape</a></li>
+        <li><a class="drawer-link" href="#team">12 Team</a></li>
+        <li><a class="drawer-link" href="#funding">13 Funding & Use of Funds</a></li>
+        <li><a class="drawer-link" href="#the-ask">14 The Ask & Next Milestones</a></li>
+        <li><a class="drawer-link" href="#closing-contact">15 Closing / Contact</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <!-- Mobile fun disclaimer -->
+  <div id="mobileBanner" class="fixed bottom-0 inset-x-0 z-50 m-3 p-3 rounded-xl bg-amber1/90 text-charcoal shadow-soft hidden">
+    <div class="flex items-start gap-3">
+      <div class="text-xl">📱</div>
+      <p class="text-sm leading-snug">
+        Tiny screen detected! This deck is designed for desktop presentation.
+        You can still scroll, but the wow factor shines on a big display. 😉
+      </p>
+      <button id="mobileBannerClose" class="ml-auto px-2 py-1 rounded bg-black/20 hover:bg-black/30">Got it</button>
+    </div>
+  </div>
+
+  <!-- Main: full-page slides with snap scroll -->
+  <main id="deck" class="snap-y snap-mandatory h-screen overflow-y-scroll">
+
+    <!-- 01 Cover -->
+    <section id="cover" class="slide snap-start" data-bg="1" aria-labelledby="cover-title">
+      <div class="slide-inner">
+        <div class="grid md:grid-cols-12 gap-8 items-start">
+          <!-- Left: headline + CTAs -->
+          <div class="md:col-span-7">
+            <header class="mb-8">
+              <h1 id="cover-title" class="font-display text-5xl md:text-6xl xl:text-7xl leading-tight max-w-3xl">
+                AI trading that learns as fast as the market.
+              </h1>
+              <h2 class="font-display text-3xl md:text-4xl text-aqua/90 leading-snug max-w-3xl mt-2">
+                …and belongs to everyone.
+              </h2>
+
+              <p class="mt-4 text-steel max-w-prose">
+                Event-driven, transparent, non-custodial.
+              </p>
+
+              <!-- SR-only one-liner for a11y -->
+              <p class="sr-only">
+                1DES democratizes intelligent trading with adaptive AI systems that evolve with the market, making institutional-grade performance accessible and transparent.
+              </p>
+            </header>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Send WhatsApp -->
+              <a
+                href="https://wa.me/34642350546?text=Hi%20from%201DES%20site%20%E2%80%94%20I%E2%80%99d%20like%20to%20learn%20more."
+                class="btn-primary"
+                aria-label="Send WhatsApp message to +34 642 35 05 46"
+                target="_blank" rel="noopener"
+              >
+                Send WhatsApp
+              </a>
+
+              <!-- Demo placeholder -->
+              <button
+                type="button"
+                class="btn-ghost opacity-60 cursor-not-allowed"
+                aria-disabled="true" tabindex="-1"
+                title="Demo coming soon"
+              >
+                Play 30s Demo
+              </button>
+            </div>
+
+            <!-- Micro-copy: city list -->
+            <div class="mt-4 text-xs text-steel/90 tracking-wide">
+              Barcelona • Rasht • Karaj • Maastricht
+            </div>
+          </div>
+
+          <!-- Right: proof panel with placeholder numbers -->
+          <aside class="md:col-span-5">
+            <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 md:p-6 shadow-soft max-w-xl">
+              <div class="grid grid-cols-2 gap-3">
+                <div class="col-span-2">
+                  <h4 class="font-display text-aqua tracking-wide text-sm uppercase">Proof points</h4>
+                </div>
+
+                <!-- Placeholder metrics (fake numbers for layout) -->
+                <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
+                  <div class="text-2xl font-semibold">5<span class="text-aqua"> yrs</span></div>
+                  <div class="text-xs text-steel">R&amp;D + live trading</div>
+                </div>
+
+                <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
+                  <div class="text-2xl font-semibold">45<span class="text-aqua"> ms</span></div>
+                  <div class="text-xs text-steel">p50 signal → exec</div>
+                </div>
+
+                <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
+                  <div class="text-2xl font-semibold">Multi-exchange support</div>
+                </div>
+
+                <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
+                  <div class="text-2xl font-semibold">1.2<span class="text-aqua">M</span></div>
+                  <div class="text-xs text-steel">ticks / day processed</div>
+                </div>
+              </div>
+
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Optional slide caption near bottom-left -->
+      <div class="absolute bottom-24 text-steel/90 max-w-prose text-sm" style="left: var(--outer-margin-min);">
+        From code to confidence — 1DES brings self-learning AI trading to everyone.
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 02 — Problem / Opportunity (v3 concise) -->
+    <section id="problem-opportunity" class="slide snap-start" data-bg="2" aria-labelledby="problem-opportunity-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Key message -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">The Gap</p>
+              <h2 id="problem-opportunity-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                Retail traders face a market built for machines — <span class="text-steel">without having one.</span>
+              </h2>
+            </header>
+
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Pain Points</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>📈 <span class="font-semibold text-ivory">Overload:</span> Too much data, no time to react.</li>
+                <li>😰 <span class="font-semibold text-ivory">Emotion:</span> Fear & greed → losses.</li>
+                <li>🏦 <span class="font-semibold text-ivory">Edge gap:</span> Institutions run AI — individuals can’t.</li>
+                <li>⚫ <span class="font-semibold text-ivory">Black-box bots:</span> Closed, custodial, untrusted.</li>
+              </ul>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">The Opportunity</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>🎯 <span class="text-ivory font-medium">10 M</span> active crypto traders.</li>
+                <li>🚀 <span class="text-aqua font-semibold">0.1 %</span> adoption ≈ <span class="text-aqua font-semibold">10 k</span> users → multi-million € market.</li>
+                <li>🤖 Rising demand for <span class="text-ivory font-medium">transparent, adaptive AI</span>.</li>
+              </ul>
+            </section>
+
+            <p class="text-[13px] italic text-steel/80">
+              Humans trade on emotion. Institutions trade on algorithms. <span class="text-aqua">1DES</span> brings that power to individuals.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visuals -->
+          <aside class="lg:col-span-6 space-y-6">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-charcoal/40 border border-steel/30">
+                <p class="text-[11px] font-semibold uppercase text-steel tracking-wider">Retail chaos</p>
+                <div class="mt-3 grid grid-cols-6 gap-1 h-16">
+                  <div class="bg-amber/50 animate-pulse"></div>
+                  <div class="bg-amber/30"></div>
+                  <div class="bg-amber/60 animate-pulse"></div>
+                  <div class="bg-amber/40"></div>
+                  <div class="bg-amber/70"></div>
+                  <div class="bg-amber/30 animate-pulse"></div>
+                </div>
+                <p class="mt-2 text-[11px] text-steel/80">Noise · reaction · loss</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-charcoal/40 border border-steel/30">
+                <p class="text-[11px] font-semibold uppercase text-steel tracking-wider">Institutional calm</p>
+                <div class="mt-3 h-16 flex items-center">
+                  <div class="w-full h-2 rounded-full bg-navy/60 overflow-hidden">
+                    <div class="h-full w-3/4 bg-aqua/70"></div>
+                  </div>
+                </div>
+                <p class="mt-2 text-[11px] text-steel/80">Pipelines · models · precision</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+              <div class="flex items-center justify-between">
+                <h4 class="text-[12px] font-semibold text-ivory uppercase tracking-wide">Market participants</h4>
+                <span class="text-[11px] text-steel/60">Illustrative</span>
+              </div>
+              <div class="mt-3 space-y-2">
+                <div class="flex items-center gap-3">
+                  <span class="w-24 text-[11px] text-steel">Institutions</span>
+                  <div class="flex-1 h-2 rounded-full bg-navy/60 overflow-hidden"><div class="h-full w-[1%] min-w-[10px] bg-aqua"></div></div>
+                  <span class="w-10 text-right text-[11px] text-steel">1 %</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-24 text-[11px] text-steel">Retail</span>
+                  <div class="flex-1 h-2 rounded-full bg-navy/60 overflow-hidden"><div class="h-full w-[99%] bg-amber/70"></div></div>
+                  <span class="w-10 text-right text-[11px] text-steel">99 %</span>
+                </div>
+              </div>
+
+              <svg viewBox="0 0 440 90" class="w-full mt-5" role="img" aria-label="Performance gap">
+                <line x1="20" y1="70" x2="420" y2="70" class="stroke-steel/40" stroke-width="1" />
+                <path d="M20 60 C120 35, 220 30, 420 22" class="fill-none stroke-aqua" stroke-width="3" />
+                <path d="M20 60 C120 63, 220 67, 420 72" class="fill-none stroke-amber" stroke-width="3" />
+                <path d="M305 34 L365 26" class="fill-none stroke-ivory/70" stroke-width="1.5" stroke-dasharray="3,3" />
+                <circle cx="305" cy="34" r="3" class="fill-ivory/70" />
+                <text x="370" y="28" class="fill-steel text-[10px]">Performance gap</text>
+              </svg>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+
+    </section>
+
+    <!-- Slide 03 — Solution -->
+    <section id="solution" class="slide snap-start" data-bg="3" aria-labelledby="solution-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Our Solution</p>
+              <h2 id="solution-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                Smart trading that learns and adapts on its own.
+              </h2>
+            </header>
+
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">What We Do</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>⚡ Ingests <span class="text-ivory">live market streams</span> from multiple exchanges.</li>
+                <li>🧩 Processes market data through <span class="text-ivory">our own custom data-processing pipeline</span>.</li>
+                <li>🤖 Feeds ML models (LSTM, PatchTST) trained for accuracy + drawdown control.</li>
+                <li>🚀 Executes trades instantly through exchange APIs — fully non-custodial, audit-ready.</li>
+                <li>🔁 Continuously retrains using <span class="text-ivory">reinforcement loops</span> from live performance.</li>
+              </ul>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Core Benefits</h3>
+              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[15px]">
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Challenge</p>
+                  <ul class="space-y-1">
+                    <li>Market speed</li>
+                    <li>Emotional bias</li>
+                    <li>Lack of access</li>
+                    <li>Trust deficit</li>
+                    <li>Complexity</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">1DES Solution</p>
+                  <ul class="space-y-1 text-ivory">
+                    <li>Real-time adaptive ML models</li>
+                    <li>Automated, rule-based execution</li>
+                    <li>Institutional-grade AI tools</li>
+                    <li>Transparent & versioned models</li>
+                    <li>Unified dashboard with clear signals</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              A self-learning trading system that improves with every market tick.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Architecture Overview</h4>
+              <svg viewBox="0 0 800 120" class="w-full mt-4" role="img" aria-label="1DES architecture pipeline">
+                <!-- Flow arrows -->
+                <defs>
+                  <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrow)">
+                  <line x1="80" y1="60" x2="180" y2="60"/>
+                  <line x1="280" y1="60" x2="380" y2="60"/>
+                  <line x1="480" y1="60" x2="580" y2="60"/>
+                  <line x1="680" y1="60" x2="780" y2="60"/>
+                </g>
+                <g text-anchor="middle" class="text-[11px] fill-steel">
+                  <text x="130" y="40">Market Data</text>
+                  <text x="330" y="40">Feature Pipeline</text>
+                  <text x="430" y="40">ML Models</text>
+                  <text x="530" y="40">Signal Engine</text>
+                  <text x="630" y="40">Execution</text>
+                  <text x="730" y="40">Feedback</text>
+                </g>
+                <circle cx="430" cy="60" r="20" class="fill-aqua/30 stroke-aqua" />
+                <text x="430" y="64" text-anchor="middle" class="text-[12px] fill-ivory font-semibold">1DES</text>
+              </svg>
+
+              <p class="mt-3 text-[12px] text-steel/80">Market Data → Feature Pipeline → ML Models → Signal Engine → Trade Execution → Feedback Loop</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&lt; 100 ms</p>
+                <p class="text-[11px] text-steel/80">Execution latency</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&gt; 95 %</p>
+                <p class="text-[11px] text-steel/80">System uptime</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">€ &lt; 100 / mo</p>
+                <p class="text-[11px] text-steel/80">Infra cost</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 04 — Product Overview -->
+    <section id="product-overview" class="slide snap-start" data-bg="4" aria-labelledby="product-overview-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Product Overview</p>
+              <h2 id="product-overview-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                Adaptive AI that trades, learns, and improves — <span class="text-steel">nonstop.</span>
+              </h2>
+            </header>
+
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Three Integrated Layers</h3>
+              <div class="space-y-4 text-[15px] leading-relaxed">
+                <div>
+                  <p class="font-semibold text-ivory">🧠 AI Layer</p>
+                  <p class="text-steel">Hybrid learning (binary + unsupervised) adapts to evolving markets.</p>
+                  <p class="text-[13px] text-steel/70">Continuously improving intelligence — reacts to data, not static rules.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-ivory">⚙️ Automation Layer</p>
+                  <p class="text-steel">Executes trades via non-custodial exchange APIs in milliseconds.</p>
+                  <p class="text-[13px] text-steel/70">Emotion-free, consistent, and real-time performance.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-ivory">📊 Dashboard Layer</p>
+                  <p class="text-steel">Visualizes signals, accuracy, positions, and logs.</p>
+                  <p class="text-[13px] text-steel/70">Full transparency — users see what the AI decides and why.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Key Features</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>🧠 <span class="text-ivory">Hybrid Learning Engine</span> — binary classifiers + unsupervised pattern discovery.</li>
+                <li>⚙️ <span class="text-ivory">Autonomous Execution</span> — trades under 100 ms.</li>
+                <li>🔍 <span class="text-ivory">Transparent Model Governance</span> — versioned models + performance metrics.</li>
+                <li>🔄 <span class="text-ivory">Continuous Adaptation Loop</span> — learns from live feedback.</li>
+                <li>📊 <span class="text-ivory">Unified Dashboard</span> — visualizes trades, accuracy, and risk metrics.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              From learning to execution — every trade, every tick.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- 3-Layer Architecture -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">System Architecture</h4>
+              <svg viewBox="0 0 800 260" class="w-full mt-4" role="img" aria-label="1DES three-layer architecture">
+                <defs>
+                  <marker id="arrow2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+
+                <!-- Flow lines -->
+                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrow2)">
+                  <line x1="140" y1="70" x2="660" y2="70"/>
+                  <line x1="140" y1="180" x2="660" y2="180"/>
+                </g>
+
+                <!-- Layers -->
+                <g text-anchor="middle">
+                  <!-- AI Layer -->
+                  <rect x="120" y="40" width="160" height="60" rx="12" class="fill-aqua/20 stroke-aqua/70"/>
+                  <text x="200" y="70" class="fill-ivory text-[13px] font-semibold">AI Layer</text>
+                  <text x="200" y="90" class="fill-steel text-[11px]">Binary + Unsupervised</text>
+
+                  <!-- Automation Layer -->
+                  <rect x="320" y="40" width="160" height="60" rx="12" class="fill-aqua/20 stroke-aqua/70"/>
+                  <text x="400" y="70" class="fill-ivory text-[13px] font-semibold">Automation Layer</text>
+                  <text x="400" y="90" class="fill-steel text-[11px]">Non-custodial execution</text>
+
+                  <!-- Dashboard Layer -->
+                  <rect x="520" y="40" width="160" height="60" rx="12" class="fill-aqua/20 stroke-aqua/70"/>
+                  <text x="600" y="70" class="fill-ivory text-[13px] font-semibold">Dashboard Layer</text>
+                  <text x="600" y="90" class="fill-steel text-[11px]">Transparency & control</text>
+                </g>
+
+                <!-- Feedback arrow -->
+                <path d="M660 180 C700 160, 700 80, 660 60" class="stroke-amber fill-none" stroke-width="2" marker-end="url(#arrow2)" />
+              </svg>
+            </div>
+
+            <!-- Metrics row -->
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">200+</p>
+                <p class="text-[11px] text-steel/80">Pilot users</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&gt; 1.5</p>
+                <p class="text-[11px] text-steel/80">Sharpe ratio</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&gt; 95 %</p>
+                <p class="text-[11px] text-steel/80">Uptime</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 05 — Technology & Moat -->
+    <section id="technology-moat" class="slide snap-start" data-bg="2" aria-labelledby="technology-moat-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Technology & Moat</p>
+              <h2 id="technology-moat-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                An event-driven AI architecture that learns and reacts in real time.
+              </h2>
+            </header>
+
+            <!-- Core Components -->
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Core Components</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>⚡ <strong class="text-ivory">Event-Driven Ingestion</strong> — Kafka + Faust stream millions of market events &lt; 100 ms latency.</li>
+                <li>🧮 <strong class="text-ivory">Feature Generator</strong> — builds EMA, RSI, volatility, depth & momentum features in real time.</li>
+                <li>🧠 <strong class="text-ivory">AI Model Core</strong> — hybrid of binary classification & time-series models (PatchTST, LSTM).</li>
+                <li>🔍 <strong class="text-ivory">Signal Engine</strong> — merges multi-model outputs into adaptive trade signals.</li>
+                <li>🚀 <strong class="text-ivory">Trade Executor</strong> — non-custodial API orders &lt; 100 ms.</li>
+                <li>🔄 <strong class="text-ivory">Feedback Loop</strong> — post-trade metrics → continuous model retraining.</li>
+              </ul>
+            </section>
+
+            <!-- Moat -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Technical Moat</h3>
+              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[15px]">
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Advantage</p>
+                  <ul class="space-y-1">
+                    <li>Event-Driven AI</li>
+                    <li>Hybrid Intelligence</li>
+                    <li>Continuous Learning</li>
+                    <li>Model Governance</li>
+                    <li>Scalable & Efficient</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Description</p>
+                  <ul class="space-y-1 text-ivory">
+                    <li>Every event → decision, no polling.</li>
+                    <li>Binary + forecast + unsupervised fusion.</li>
+                    <li>Live feedback refines models.</li>
+                    <li>Versioned metrics for transparency.</li>
+                    <li>Lean micro-services &lt; €100/mo.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              Every market tick becomes intelligence — stream in, learn, act, repeat.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">AI Pipeline Flow</h4>
+              <svg viewBox="0 0 840 140" class="w-full mt-4" role="img" aria-label="Event-driven AI pipeline">
+                <defs>
+                  <marker id="arrow3" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+
+                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrow3)">
+                  <line x1="70" y1="70" x2="180" y2="70"/>
+                  <line x1="270" y1="70" x2="380" y2="70"/>
+                  <line x1="470" y1="70" x2="580" y2="70"/>
+                  <line x1="670" y1="70" x2="780" y2="70"/>
+                </g>
+
+                <g text-anchor="middle">
+                  <text x="120" y="50" class="fill-steel text-[11px]">Market Events</text>
+                  <text x="320" y="50" class="fill-steel text-[11px]">Feature Generator</text>
+                  <text x="420" y="50" class="fill-steel text-[11px]">AI Model Core</text>
+                  <text x="520" y="50" class="fill-steel text-[11px]">Signal Engine</text>
+                  <text x="620" y="50" class="fill-steel text-[11px]">Trade Executor</text>
+                  <text x="720" y="50" class="fill-steel text-[11px]">Feedback Loop</text>
+                </g>
+
+                <!-- Central AI Core emphasis -->
+                <circle cx="420" cy="70" r="24" class="fill-aqua/25 stroke-aqua"/>
+                <text x="420" y="74" text-anchor="middle" class="text-[12px] fill-ivory font-semibold">Hybrid AI</text>
+              </svg>
+            </div>
+
+            <!-- Metrics / proof points -->
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&gt; 99 %</p>
+                <p class="text-[11px] text-steel/80">Uptime</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&lt; 100 ms</p>
+                <p class="text-[11px] text-steel/80">Latency</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">5 yrs R&D</p>
+                <p class="text-[11px] text-steel/80">Continuous dev</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 06 — Market & Opportunity -->
+    <section id="market-opportunity" class="slide snap-start" data-bg="3" aria-labelledby="market-opportunity-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Market & Opportunity</p>
+              <h2 id="market-opportunity-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                AI + crypto trading is surging.
+              </h2>
+            </header>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Dynamics</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>🌍 <span class="text-ivory font-medium">560M+</span> crypto owners; <span class="text-ivory font-medium">50M+</span> active users/traders (+<span class="text-ivory font-medium">10M</span> ~25% YoY).</li>
+                <li>🤖 <span class="text-ivory font-medium">60–70%</span> of crypto volume algorithmic — industry estimate <span class="text-steel/70">(unverified)</span>.</li>
+                <li>🧩 Retail AI/bot usage ≈ <span class="text-ivory font-medium">36.6%</span> of crypto traders.</li>
+                <li>📈 AI + algo trading growing &gt; <span class="text-ivory font-medium">12% CAGR</span> → <span class="text-ivory font-medium">$35B+</span> by 2029.</li>
+              </ul>
+            </section>
+
+            <!-- Market sizing -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Market Sizing (Crypto Focus)</h3>
+              <div class="grid grid-cols-3 gap-3 text-[13px]">
+                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                  <p class="text-xs uppercase tracking-wide text-steel">TAM</p>
+                  <p class="text-ivory font-semibold">Global retail + semi-pro</p>
+                  <p class="text-steel mt-1">2024: <span class="text-ivory">$25B</span>/yr</p>
+                  <p class="text-steel">2029: <span class="text-ivory">&gt;$35B</span>/yr</p>
+                </div>
+                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                  <p class="text-xs uppercase tracking-wide text-steel">SAM</p>
+                  <p class="text-ivory font-semibold">Crypto AI/automation users</p>
+                  <p class="text-steel mt-1">2024: <span class="text-ivory">~10M</span> ≈ <span class="text-ivory">$2B</span>/yr</p>
+                  <p class="text-steel">2029: <span class="text-ivory">~20M</span> ≈ <span class="text-ivory">$4B</span>/yr</p>
+                </div>
+                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                  <p class="text-xs uppercase tracking-wide text-steel">SOM (1DES)</p>
+                  <p class="text-ivory font-semibold">Entry wedge: semi-pro</p>
+                  <p class="text-steel mt-1">≈ <span class="text-ivory">100k</span> users → <span class="text-ivory">$100M</span>/yr</p>
+                  <p class="text-steel">→ <span class="text-ivory">&gt;$200M</span>/yr long-term</p>
+                </div>
+              </div>
+              <p class="text-[13px] text-steel/80">Even <span class="text-aqua font-semibold">0.1%</span> of active crypto traders ≈ <span class="text-aqua font-semibold">100k</span> users → €5–10M ARR potential.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Target Segment — Semi-Pro Crypto Traders</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>Trade daily/weekly; lack institutional-grade automation.</li>
+                <li>API-literate; indicator-savvy; global early adopters.</li>
+                <li>Demand non-custodial, transparent, AI-assisted tools.</li>
+              </ul>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Why Now</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>Post-FTX trust gap → demand for auditable AI.</li>
+                <li>Exchange APIs mainstream (Binance, MEXC, Kraken).</li>
+                <li>AI assistants becoming standard UX.</li>
+                <li>Clearer EU/US regulation → stable growth path.</li>
+              </ul>
+            </section>
+
+            <!-- References -->
+            <p class="text-[12px] text-steel/70">
+              Sources:&nbsp;
+              <a href="https://www.triple-a.io/cryptocurrency-ownership-data" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TripleA — 560M+ owners</a>;
+              <a href="https://a16zcrypto.com/posts/article/estimating-crypto-users/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z — 50M+ active users</a>;
+              <a href="https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z 2025 — +10M (~25%) growth</a>;
+              <span class="underline decoration-dotted">Industry estimate — 60–70% algo volume (unverified)</span>;
+              <a href="https://www.tradingview.com/news/financemagnates%3Aca995b3fc094b%3A0-bots-bets-and-memes-37-of-crypto-traders-double-down-on-ai/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TradingView / FinanceMagnates — 36.6% use AI/bots</a>;
+              <a href="https://www.grandviewresearch.com/industry-analysis/algorithmic-trading-market-report" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Grand View Research</a>;
+              <a href="https://www.sphericalinsights.com/es/reports/algorithmic-trading-market" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Spherical Insights</a>;
+              <a href="https://market.us/report/ai-in-trading-market/#utm_source=chatgpt.com" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Market.us</a>.
+              Illustrative sizing.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visuals -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Adoption line chart -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Retail AI Trading Adoption</h4>
+              <svg viewBox="0 0 520 160" class="w-full mt-3" role="img" aria-label="Retail AI trading adoption rising from 10% to 25%">
+                <!-- axes -->
+                <line x1="40" y1="130" x2="490" y2="130" class="stroke-steel/30" stroke-width="1"/>
+                <line x1="40" y1="30" x2="40" y2="130" class="stroke-steel/30" stroke-width="1"/>
+                <!-- line -->
+                <path d="M40 120 C150 110, 280 80, 490 60" class="fill-none stroke-aqua" stroke-width="3"/>
+                <!-- points -->
+                <circle cx="40" cy="120" r="3" class="fill-aqua"/>
+                <circle cx="490" cy="60" r="3" class="fill-aqua"/>
+                <!-- labels -->
+                <text x="40" y="145" class="fill-steel text-[10px]">2024</text>
+                <text x="460" y="145" class="fill-steel text-[10px]">2029</text>
+                <text x="18" y="122" class="fill-steel text-[10px]">10%</text>
+                <text x="18" y="62" class="fill-steel text-[10px]">25%</text>
+              </svg>
+              <p class="mt-2 text-[11px] text-steel/70">Illustrative adoption trajectory; not to scale.</p>
+            </div>
+
+            <!-- TAM → SAM → SOM funnel -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Market Funnel</h4>
+              <svg viewBox="0 0 520 180" class="w-full mt-3" role="img" aria-label="TAM to SAM to SOM funnel with 1DES wedge">
+                <!-- funnel bars -->
+                <rect x="30" y="30" width="460" height="28" rx="6" class="fill-navy/60 stroke-steel/30"/>
+                <rect x="60" y="78" width="400" height="28" rx="6" class="fill-navy/60 stroke-steel/30"/>
+                <rect x="90" y="126" width="220" height="28" rx="6" class="fill-amber/50 stroke-amber/60"/>
+                <!-- labels -->
+                <text x="40" y="48" class="fill-steel text-[11px]">TAM — $25B → $35B+</text>
+                <text x="70" y="96" class="fill-steel text-[11px]">SAM — ~10M → ~20M users</text>
+                <text x="100" y="144" class="fill-ivory text-[11px] font-semibold">SOM (1DES wedge) — ~100k users</text>
+              </svg>
+              <p class="mt-2 text-[11px] text-steel/70">1DES targets the crypto automation wedge first, then expands.</p>
+            </div>
+
+            <p class="text-[12px] text-steel/80 italic">1DES operates where retail access meets AI performance.</p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 07 — Business Model -->
+    <section id="business-model" class="slide snap-start" data-bg="4" aria-labelledby="business-model-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Business Model</p>
+              <h2 id="business-model-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                A transparent, subscription-based model that scales with usage and performance.
+              </h2>
+            </header>
+
+            <!-- Revenue Structure -->
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Revenue Streams</h3>
+              <ul class="space-y-3 text-[15px] leading-relaxed">
+                <li>1️⃣ <strong class="text-ivory">Subscription (SaaS)</strong> — monthly plans by trading volume and features. <span class="text-steel/80">80–85% margin</span>.</li>
+                <li>2️⃣ <strong class="text-ivory">Performance Add-on</strong> — optional 5–10% success-based fee for premium users. <span class="text-steel/80">90% margin</span>.</li>
+                <li>3️⃣ <strong class="text-ivory">Data & API Licensing</strong> — anonymized AI signal feeds for partners/exchanges. <span class="text-steel/80">70–80% margin</span>.</li>
+                <li>4️⃣ <strong class="text-ivory">Future Marketplace</strong> — curated third-party strategy modules. <span class="text-steel/80">70/30 revenue share</span>.</li>
+              </ul>
+            </section>
+
+            <!-- Pricing -->
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Pricing Tiers (Indicative)</h3>
+              <div class="grid grid-cols-3 gap-3 text-center text-[13px]">
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Starter</p>
+                  <p class="text-steel text-xs">€19–€29</p>
+                  <p class="text-[11px] text-steel/70 mt-1">Full AI execution<br>Limited trading volume</p>
+                </div>
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Pro</p>
+                  <p class="text-steel text-xs">€49–€99</p>
+                  <p class="text-[11px] text-steel/70 mt-1">Full automation<br>Higher volume cap + dashboard</p>
+                </div>
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Institutional Lite</p>
+                  <p class="text-steel text-xs">€199–€299</p>
+                  <p class="text-[11px] text-steel/70 mt-1">API access<br>Custom volume & metrics</p>
+                </div>
+              </div>
+              <p class="text-[13px] text-steel/80">Low CAC + high retention → strong unit economics. <span class="text-ivory font-medium">ARPU ≈ €60/mo</span>.</p>
+            </section>
+
+            <!-- Unit Economics -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Early Unit Economics</h3>
+              <ul class="space-y-1 text-[14px]">
+                <li>🎯 CAC: <span class="text-ivory">€30–40</span> → mostly community-driven.</li>
+                <li>💎 LTV: <span class="text-ivory">€500–600</span> → 9–12 month retention.</li>
+                <li>💰 Gross Margin: <span class="text-ivory">&gt;80%</span> → infra cost &lt; €100/mo.</li>
+                <li>📈 Breakeven: <span class="text-ivory">~120 paying users</span>.</li>
+                <li>🚀 Runway Goal: 12–15 months @ €150–200K raise → €5K MRR.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              Every plan includes execution — scale unlocks more volume, data, and intelligence.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Flywheel -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 flex flex-col items-center">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-4">Scalability Flywheel</h4>
+              <svg viewBox="0 0 380 380" class="w-80 h-80" role="img" aria-label="1DES scalability flywheel">
+                <defs>
+                  <linearGradient id="fw" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#00A7A7"/>
+                    <stop offset="100%" stop-color="#14B8A6"/>
+                  </linearGradient>
+                </defs>
+                <!-- Circular arrows -->
+                <circle cx="190" cy="190" r="120" class="fill-none stroke-[url(#fw)]" stroke-width="2" stroke-dasharray="4 4"/>
+                <path d="M190 70 L190 45" class="stroke-aqua" stroke-width="2" marker-end="url(#arrowFw)"/>
+                <path d="M310 190 L335 190" class="stroke-aqua" stroke-width="2" marker-end="url(#arrowFw)"/>
+                <path d="M190 310 L190 335" class="stroke-aqua" stroke-width="2" marker-end="url(#arrowFw)"/>
+                <path d="M70 190 L45 190" class="stroke-aqua" stroke-width="2" marker-end="url(#arrowFw)"/>
+
+                <!-- Text around the circle -->
+                <text x="190" y="45" text-anchor="middle" class="fill-ivory text-[12px]">More Users</text>
+                <text x="335" y="195" class="fill-ivory text-[12px]">More Trades</text>
+                <text x="190" y="355" text-anchor="middle" class="fill-ivory text-[12px]">More Feedback Data</text>
+                <text x="25" y="195" class="fill-ivory text-[12px]">Smarter Models</text>
+
+                <text x="190" y="190" text-anchor="middle" class="fill-aqua text-[13px] font-semibold">1DES</text>
+              </svg>
+              <p class="mt-4 text-[11px] text-steel/70">More users → more trades → more feedback data → smarter models → better results → more users.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 08 — Traction & Validation -->
+    <section id="traction-validation" class="slide snap-start" data-bg="2" aria-labelledby="traction-validation-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Traction & Validation</p>
+              <h2 id="traction-validation-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                From a small experiment to a full trading brain — built step by step, proven line by line.
+              </h2>
+            </header>
+
+            <!-- Product Milestones -->
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Journey</h3>
+              <ul class="space-y-3 text-[15px] leading-relaxed">
+                <li>
+                  <strong class="text-ivory">2020–2022 · The First Prototype</strong><br>
+                  What began as late-night code and curiosity turned into our first working AI trader.<br>
+                  We proved automated decisions could beat static rules — and learned where they couldn’t.
+                </li>
+                <li>
+                  <strong class="text-ivory">2022–2025 · The Rebuild and Maturity</strong><br>
+                  We tore it down and rebuilt from the ground up — event-driven, cloud-native, and fast enough for 10K+ users.<br>
+                  Today, 1DES runs on hybrid models, retrains in real time, and is ready for structured beta at scale.
+                </li>
+              </ul>
+            </section>
+
+            <!-- Current Validation -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">What’s Working</h3>
+              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[14px]">
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Category</p>
+                  <ul class="space-y-1">
+                    <li>Architecture</li>
+                    <li>AI Core</li>
+                    <li>Reliability</li>
+                    <li>Cost Efficiency</li>
+                    <li>Scalability</li>
+                    <li>Compliance</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Proof</p>
+                  <ul class="space-y-1 text-ivory">
+                    <li>Event-driven micro-services &lt; 100 ms latency</li>
+                    <li>Hybrid models benchmarked on live crypto data</li>
+                    <li>&gt; 99 % uptime in long-run tests</li>
+                    <li>Infra cost &lt; €100 / month</li>
+                    <li>10K user capacity validated</li>
+                    <li>PCI/GDPR-ready versioning & logging</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="space-y-2">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Technical Highlights</h3>
+              <ul class="text-[15px] leading-relaxed space-y-1">
+                <li>🔁 Continuous feedback loop for live model calibration.</li>
+                <li>🌐 Multi-exchange ready — Binance + MEXC integrated.</li>
+                <li>📊 Model governance dashboard in development.</li>
+                <li>⚙️ Lean DevOps pipeline for rapid deployment.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              Five years of obsession turned into one ready product — proven, lean, and built to grow.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Two-Phase Timeline -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Development Timeline</h4>
+              <svg viewBox="0 0 620 140" class="w-full mt-4" role="img" aria-label="Timeline 2020–2022 to 2022–2025">
+                <!-- horizontal line -->
+                <line x1="60" y1="70" x2="560" y2="70" class="stroke-steel/40" stroke-width="2" />
+                <!-- milestones -->
+                <circle cx="160" cy="70" r="10" class="fill-aqua"/>
+                <circle cx="460" cy="70" r="10" class="fill-aqua"/>
+                <text x="120" y="45" class="fill-ivory text-[12px] font-semibold">2020–2022</text>
+                <text x="410" y="45" class="fill-ivory text-[12px] font-semibold">2022–2025</text>
+                <text x="160" y="100" text-anchor="middle" class="fill-steel text-[11px]">MVP + Model Tests</text>
+                <text x="460" y="100" text-anchor="middle" class="fill-steel text-[11px]">Full System Redesign</text>
+              </svg>
+            </div>
+
+            <!-- Metric Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&gt; 99 %</p>
+                <p class="text-[11px] text-steel/80">Uptime</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&lt; 100 ms</p>
+                <p class="text-[11px] text-steel/80">Latency</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">10 K+</p>
+                <p class="text-[11px] text-steel/80">Scalability</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-xl font-semibold text-aqua">&lt; €100</p>
+                <p class="text-[11px] text-steel/80">Infra Cost</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 09 — Go-to-Market Strategy -->
+    <section id="gtm" class="slide snap-start" data-bg="3" aria-labelledby="gtm-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Go-to-Market</p>
+              <h2 id="gtm-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                From full-time kickoff to public beta and first revenue — steady, achievable growth.
+              </h2>
+            </header>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Purpose</h3>
+              <p class="text-[15px] leading-relaxed text-steel">
+                Pre-seed enables full-time execution, beta finalization, onboarding the first <span class="text-ivory font-medium">100 paying users</span>, and reaching <span class="text-ivory font-medium">€2K–€5K MRR</span> within 12 months.
+              </p>
+            </section>
+
+            <!-- Acquisition Strategy -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Acquisition Strategy</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>Invite-only onboarding → controlled scaling.</li>
+                <li>Transparency marketing — weekly model updates (X/Discord/Medium).</li>
+                <li>Referral incentives — early-adopter discounts & profit-share bonuses.</li>
+                <li>Influencer & quant collaborations to keep CAC low.</li>
+                <li>Educational series — <span class="text-ivory">“AI Trading Explained.”</span></li>
+              </ul>
+            </section>
+
+            <!-- Marketing Flywheel -->
+            <section class="space-y-2">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Marketing Flywheel</h3>
+              <p class="text-[15px] leading-relaxed text-steel">
+                Transparency → Trust → Adoption → Data → Smarter AI → More Transparency.
+              </p>
+              <p class="italic text-[13px] text-steel/80">
+                Each new trader improves the models, fueling the next wave of organic growth.
+              </p>
+            </section>
+          </div>
+
+          <!-- RIGHT: Visuals -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Execution Timeline -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Execution Plan · Q2 2026 → Q1 2027</h4>
+              <svg viewBox="0 0 640 180" class="w-full mt-4" role="img" aria-label="Q2 2026 to Q1 2027 go-to-market timeline">
+                <!-- base line -->
+                <line x1="40" y1="90" x2="600" y2="90" class="stroke-steel/40" stroke-width="2"/>
+                <!-- segments -->
+                <rect x="40"  y="78" width="140" height="24" rx="6" class="fill-aqua/20 stroke-aqua/60"/>
+                <rect x="200" y="78" width="140" height="24" rx="6" class="fill-aqua/20 stroke-aqua/60"/>
+                <rect x="360" y="78" width="140" height="24" rx="6" class="fill-aqua/20 stroke-aqua/60"/>
+                <rect x="520" y="78" width="120" height="24" rx="6" class="fill-aqua/20 stroke-aqua/60"/>
+                <!-- labels -->
+                <text x="110" y="70" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q2 2026</text>
+                <text x="270" y="70" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q3 2026</text>
+                <text x="430" y="70" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q4 2026</text>
+                <text x="580" y="70" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q1 2027</text>
+                <!-- descriptions -->
+                <text x="110" y="115" text-anchor="middle" class="fill-steel text-[11px]">Kickoff · Beta ready</text>
+                <text x="270" y="115" text-anchor="middle" class="fill-steel text-[11px]">Private → Public beta</text>
+                <text x="430" y="115" text-anchor="middle" class="fill-steel text-[11px]">Expansion · First payers</text>
+                <text x="580" y="115" text-anchor="middle" class="fill-steel text-[11px]">Stabilize · €2–5K MRR</text>
+
+                <!-- milestone tags -->
+                <g class="text-[10px] fill-ivory">
+                  <rect x="70"  y="130" rx="10" ry="10" width="80" height="20" class="fill-navy/60 stroke-steel/30"/><text x="110" y="144" text-anchor="middle">Full-time Team</text>
+                  <rect x="230" y="130" rx="10" ry="10" width="80" height="20" class="fill-navy/60 stroke-steel/30"/><text x="270" y="144" text-anchor="middle">Beta Live</text>
+                  <rect x="385" y="130" rx="10" ry="10" width="110" height="20" class="fill-navy/60 stroke-steel/30"/><text x="440" y="144" text-anchor="middle">100 Paying Users</text>
+                  <rect x="540" y="130" rx="10" ry="10" width="80" height="20" class="fill-navy/60 stroke-steel/30"/><text x="580" y="144" text-anchor="middle">€5K MRR</text>
+                </g>
+              </svg>
+              <p class="mt-3 text-[11px] text-steel/70">Steady execution toward validated, recurring revenue.</p>
+            </div>
+
+            <!-- Simple Trust→Revenue loop -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Transparency → Trust → Adoption</h4>
+              <svg viewBox="0 0 620 120" class="w-full mt-3" role="img" aria-label="Marketing flywheel">
+                <defs>
+                  <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g text-anchor="middle" class="fill-ivory text-[12px]">
+                  <circle cx="110" y="60" r="20" class="fill-aqua/20 stroke-aqua"/><text x="110" y="64">Transp.</text>
+                  <circle cx="260" y="60" r="20" class="fill-aqua/20 stroke-aqua"/><text x="260" y="64">Trust</text>
+                  <circle cx="410" y="60" r="20" class="fill-aqua/20 stroke-aqua"/><text x="410" y="64">Adopt</text>
+                  <circle cx="560" y="60" r="20" class="fill-aqua/20 stroke-aqua"/><text x="560" y="64">Data</text>
+                </g>
+                <g class="stroke-aqua/70 fill-none" stroke-width="2" marker-end="url(#arrowSmall)">
+                  <line x1="130" y1="60" x2="240" y2="60"/>
+                  <line x1="280" y1="60" x2="390" y2="60"/>
+                  <line x1="430" y1="60" x2="540" y2="60"/>
+                  <path d="M560 40 C560 20, 110 20, 110 40" />
+                </g>
+                <text x="310" y="105" text-anchor="middle" class="fill-steel text-[11px]">Smarter AI from data → stronger transparency → compounding growth</text>
+              </svg>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 10 — Roadmap / Road to Beta -->
+    <section id="roadmap" class="slide snap-start" data-bg="4" aria-labelledby="roadmap-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Roadmap</p>
+              <h2 id="roadmap-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                From proven architecture to public beta and first recurring revenue.
+              </h2>
+            </header>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Timeline Overview · Q4 2025 → Q1 2027</h3>
+              <p class="text-[15px] leading-relaxed text-steel">
+                The roadmap transitions 1DES from <span class="text-ivory font-medium">validated technology</span> to a
+                <span class="text-ivory font-medium">public beta and recurring revenue</span> over five quarters.
+              </p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Key Phases</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>✅ <strong class="text-ivory">Q4 2025 – Q1 2026:</strong> Stability, monitoring, and compliance finalized; pre-seed materials prepared.</li>
+                <li>🟢 <strong class="text-ivory">Q2 2026:</strong> Full-time transition, UX polish, community setup, funding close.</li>
+                <li>🟢 <strong class="text-ivory">Q3 2026:</strong> Private → public beta; 50–100 early traders onboarded.</li>
+                <li>🟢 <strong class="text-ivory">Q4 2026:</strong> Platform scaling, first 100 paying users, €2–3K MRR.</li>
+                <li>🟢 <strong class="text-ivory">Q1 2027:</strong> 200 active users, model optimization, €5K MRR, seed-ready metrics.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              2025 – Technology ready → 2026 – Go live → 2027 – Revenue validated.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual Timeline -->
+          <aside class="lg:col-span-6 space-y-6">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Road to Beta · Timeline</h4>
+              <svg viewBox="0 0 780 260" class="w-full mt-4" role="img" aria-label="Q4 2025 to Q1 2027 roadmap">
+                <!-- Base timeline line -->
+                <line x1="60" y1="70" x2="720" y2="70" class="stroke-steel/30" stroke-width="2"/>
+
+                <!-- Milestone markers -->
+                <circle cx="140" cy="70" r="10" class="fill-aqua"/>
+                <circle cx="260" cy="70" r="10" class="fill-aqua"/>
+                <circle cx="380" cy="70" r="10" class="fill-amber/70"/>
+                <circle cx="500" cy="70" r="10" class="fill-amber/70"/>
+                <circle cx="620" cy="70" r="10" class="fill-amber/70"/>
+
+                <!-- Quarter labels -->
+                <text x="140" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q4 2025</text>
+                <text x="260" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q1 2026</text>
+                <text x="380" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q2 2026</text>
+                <text x="500" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q3 2026</text>
+                <text x="620" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q4 2026</text>
+                <text x="720" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q1 2027</text>
+
+                <!-- Track Titles -->
+                <text x="80" y="110" class="fill-steel text-[11px] font-semibold uppercase">Product / Tech</text>
+                <text x="80" y="160" class="fill-steel text-[11px] font-semibold uppercase">Growth / Market</text>
+                <text x="80" y="210" class="fill-steel text-[11px] font-semibold uppercase">Funding / Milestone</text>
+
+                <!-- Track lines -->
+                <line x1="140" y1="110" x2="700" y2="110" class="stroke-steel/20" stroke-width="1"/>
+                <line x1="140" y1="160" x2="700" y2="160" class="stroke-steel/20" stroke-width="1"/>
+                <line x1="140" y1="210" x2="700" y2="210" class="stroke-steel/20" stroke-width="1"/>
+
+                <!-- Product / Tech track -->
+                <text x="220" y="114" class="fill-steel text-[10px]">Internal Testing</text>
+                <text x="380" y="114" class="fill-steel text-[10px]">UX Polish · Dashboard</text>
+                <text x="500" y="114" class="fill-steel text-[10px]">Private → Public Beta</text>
+                <text x="620" y="114" class="fill-steel text-[10px]">Optimization</text>
+
+                <!-- Growth / Market track -->
+                <text x="380" y="164" class="fill-steel text-[10px]">Community Setup</text>
+                <text x="500" y="164" class="fill-steel text-[10px]">Referral Program</text>
+                <text x="620" y="164" class="fill-steel text-[10px]">200 Active Users</text>
+
+                <!-- Funding / Milestone track -->
+                <text x="220" y="214" class="fill-steel text-[10px]">Pre-seed Prep</text>
+                <text x="380" y="214" class="fill-steel text-[10px]">Funding Close</text>
+                <text x="500" y="214" class="fill-steel text-[10px]">First Revenue</text>
+                <text x="620" y="214" class="fill-steel text-[10px]">Seed Data Pack</text>
+              </svg>
+              <p class="mt-3 text-[11px] text-steel/70">2025 – Technology ready → 2026 – Go live → 2027 – Revenue validated.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 11 — Competition Landscape -->
+    <section id="competition" class="slide snap-start" data-bg="2" aria-labelledby="competition-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Competition</p>
+              <h2 id="competition-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                Bridging the gap between simple trading bots and institutional AI systems.
+              </h2>
+            </header>
+
+            <!-- Market Overview -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Landscape Overview</h3>
+              <div class="grid grid-cols-3 gap-x-4 text-[13px]">
+                <div class="font-semibold text-ivory">Segment</div>
+                <div class="font-semibold text-ivory">Examples</div>
+                <div class="font-semibold text-ivory">Typical Weakness</div>
+
+                <div>Retail Bots</div>
+                <div class="text-steel">3Commas, Pionex, Cryptohopper</div>
+                <div class="text-steel/80">Fixed strategies, low transparency, custodial risk.</div>
+
+                <div>Copy-Trading</div>
+                <div class="text-steel">eToro, BingX, Bitget</div>
+                <div class="text-steel/80">Human-dependent, inconsistent, limited AI.</div>
+
+                <div>Quant Platforms</div>
+                <div class="text-steel">Mudrex, Kryll, Tradetron</div>
+                <div class="text-steel/80">Coding required, no adaptive learning.</div>
+
+                <div>Institutional AI</div>
+                <div class="text-steel">Hedge fund proprietary tools</div>
+                <div class="text-steel/80">Closed access, capital-intensive.</div>
+              </div>
+            </section>
+
+            <!-- Where 1DES Wins -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Where 1DES Wins</h3>
+              <div class="overflow-x-auto text-[13px]">
+                <table class="min-w-full text-left border-separate border-spacing-x-3">
+                  <thead class="text-steel/70">
+                    <tr>
+                      <th class="pb-1">Feature</th>
+                      <th class="pb-1">Retail Bots</th>
+                      <th class="pb-1">Institutional AI</th>
+                      <th class="pb-1 text-aqua">1DES</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-steel">
+                    <tr><td>Adaptive AI (LSTM + PatchTST)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Event-Driven Architecture (&lt;100 ms)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Non-Custodial Execution</td><td>⚠️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Model Transparency</td><td>✖️</td><td>✖️</td><td>✔️</td></tr>
+                    <tr><td>Scalable Cloud-Native Stack</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Retail Accessibility (€19–99 / mo)</td><td>✔️</td><td>✖️</td><td>✔️</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="space-y-2">
+              <p class="text-[15px] leading-relaxed text-steel">
+                1DES merges institutional-grade AI precision with the accessibility and transparency retail traders demand.
+              </p>
+              <p class="italic text-[13px] text-steel/80">
+                Transparent like open source. Precise like institutional systems. Scalable for everyday users.
+              </p>
+            </section>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- 2x2 Matrix -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Positioning Map</h4>
+              <svg viewBox="0 0 520 360" class="w-full" role="img" aria-label="Competition matrix">
+                <!-- axes -->
+                <line x1="80" y1="300" x2="440" y2="300" class="stroke-steel/30" stroke-width="2"/>
+                <line x1="80" y1="300" x2="80" y2="60" class="stroke-steel/30" stroke-width="2"/>
+                <text x="260" y="330" class="fill-steel text-[11px]">Transparency / Accessibility →</text>
+                <text x="20" y="100" transform="rotate(-90,20,100)" class="fill-steel text-[11px]">↑ Intelligence / Automation</text>
+
+                <!-- competitors -->
+                <circle cx="150" cy="270" r="14" class="fill-steel/40"/><text x="150" y="274" text-anchor="middle" class="fill-steel text-[10px]">Bots</text>
+                <circle cx="200" cy="230" r="14" class="fill-steel/40"/><text x="200" y="234" text-anchor="middle" class="fill-steel text-[10px]">Copy</text>
+                <circle cx="240" cy="180" r="14" class="fill-steel/40"/><text x="240" y="184" text-anchor="middle" class="fill-steel text-[10px]">Quant</text>
+                <circle cx="420" cy="80" r="14" class="fill-steel/40"/><text x="420" y="84" text-anchor="middle" class="fill-steel text-[10px]">Funds</text>
+
+                <!-- 1DES highlight -->
+                <circle cx="360" cy="150" r="20" class="fill-aqua/30 stroke-aqua stroke-[2]"/>
+                <text x="360" y="155" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">1DES</text>
+              </svg>
+              <p class="mt-3 text-[11px] text-steel/70">Where transparency meets intelligence — 1DES sits between retail accessibility and institutional precision.</p>
+            </div>
+
+            <div class="text-[12px] text-steel/80 italic">
+              The competitive field is fragmented — none offer event-driven, transparent, non-custodial AI trading.
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 12 — Team -->
+    <section id="team" class="slide snap-start" data-bg="3" aria-labelledby="team-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Team</p>
+              <h2 id="team-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                A small, senior team turning years of experience into one powerful trading brain.
+              </h2>
+            </header>
+
+            <!-- Team DNA -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Team DNA</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed">
+                <li>Technical-first founders — hands-on engineering.</li>
+                <li>20+ years combined experience across software, AI, and trading.</li>
+                <li>Execution-driven — one-year path from funding to traction.</li>
+                <li>Lean, distributed, and synchronized across 3 cities.</li>
+              </ul>
+            </section>
+
+            <!-- Advisory & Network -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Advisory & Network (planned)</h3>
+              <ul class="space-y-2 text-[15px] leading-relaxed text-steel">
+                <li>Trading Advisor — EU market-maker quant.</li>
+                <li>Compliance Advisor — MiCA / GDPR specialist.</li>
+                <li>Strategic Partnerships — data providers & exchanges.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              Four people, one mission — bring institutional-grade AI trading to everyone.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual — Profile Cards -->
+          <aside class="lg:col-span-6 space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Founder 1 -->
+              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">B</div>
+                  <div>
+                    <h4 class="text-ivory font-semibold">Bahman</h4>
+                    <p class="text-steel text-[12px]">Team Lead · Barcelona</p>
+                  </div>
+                </div>
+                <ul class="mt-3 text-[13px] text-steel space-y-1">
+                  <li>20 years in software engineering</li>
+                  <li>Founded multiple startups</li>
+                  <li>4+ years in crypto systems and trading automation</li>
+                </ul>
+              </article>
+
+              <!-- Founder 2 -->
+              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
+                  <div>
+                    <h4 class="text-ivory font-semibold">Keyvan</h4>
+                    <p class="text-steel text-[12px]">CTO · Rasht</p>
+                  </div>
+                </div>
+                <ul class="mt-3 text-[13px] text-steel space-y-1">
+                  <li>10+ years backend, DevOps, MLOps & ML engineering</li>
+                  <li>Architected event-driven trading stack</li>
+                  <li>Python · Kafka · TF Serving · Cloud Ops</li>
+                </ul>
+              </article>
+
+              <!-- Founder 3 -->
+              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">M</div>
+                  <div>
+                    <h4 class="text-ivory font-semibold">Mehdi</h4>
+                    <p class="text-steel text-[12px]">Senior Software Engineer · Karaj</p>
+                  </div>
+                </div>
+                <ul class="mt-3 text-[13px] text-steel space-y-1">
+                  <li>ML models · data science · feature engineering</li>
+                  <li>Algorithm optimization · signal calibration</li>
+                  <li>Research and automation integration</li>
+                </ul>
+              </article>
+
+              <!-- ML Engineer -->
+              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
+                  <div>
+                    <h4 class="text-ivory font-semibold">Kasra</h4>
+                    <p class="text-steel text-[12px]">ML Engineer · Maastricht</p>
+                  </div>
+                </div>
+                <ul class="mt-3 text-[13px] text-steel space-y-1">
+                  <li>Time-series: PatchTST · LSTM</li>
+                  <li>Unsupervised pattern discovery</li>
+                  <li>Model tuning · drawdown control</li>
+                </ul>
+              </article>
+            </div>
+
+            <p class="text-center text-[12px] text-steel/80 mt-2">
+              Small team. Deep expertise. Proven delivery.
+            </p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 13 — Funding & Use of Funds -->
+    <section id="funding" class="slide snap-start" data-bg="4" aria-labelledby="funding-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Funding & Use of Funds</p>
+              <h2 id="funding-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                Pre-seed round to execute full-time, launch beta, and reach first revenue milestone.
+              </h2>
+            </header>
+
+            <!-- Funding Overview -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Overview</h3>
+              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[15px] leading-relaxed">
+                <div class="text-steel text-xs uppercase tracking-wide">Round</div>
+                <div class="text-ivory">Pre-Seed</div>
+                <div class="text-steel text-xs uppercase tracking-wide">Valuation (pre-money)</div>
+                <div class="text-ivory">€1.8M – €2.5M</div>
+                <div class="text-steel text-xs uppercase tracking-wide">Raise Target</div>
+                <div class="text-ivory">€150K – €200K</div>
+                <div class="text-steel text-xs uppercase tracking-wide">Equity Offered</div>
+                <div class="text-ivory">~8–10%</div>
+                <div class="text-steel text-xs uppercase tracking-wide">Runway</div>
+                <div class="text-ivory">12–15 months</div>
+              </div>
+              <p class="text-[13px] text-steel/80">Goal by end of runway: Public beta launched · 100 paying users · €2K–€5K MRR</p>
+            </section>
+
+            <!-- Use of Funds -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Use of Funds</h3>
+              <div class="grid grid-cols-3 gap-x-3 text-[13px] leading-relaxed">
+                <div class="font-semibold text-ivory">Category</div>
+                <div class="font-semibold text-ivory">Allocation</div>
+                <div class="font-semibold text-ivory">Description</div>
+
+                <div>Product & ML Dev</div>
+                <div class="text-aqua font-medium">40%</div>
+                <div class="text-steel/80">Finalize AI modules and model optimization.</div>
+
+                <div>Marketing & Community</div>
+                <div class="text-aqua font-medium">25%</div>
+                <div class="text-steel/80">Brand, education, referral program.</div>
+
+                <div>Infrastructure & Ops</div>
+                <div class="text-aqua font-medium">15%</div>
+                <div class="text-steel/80">Cloud scalability for 10K+ users.</div>
+
+                <div>Legal & Compliance</div>
+                <div class="text-aqua font-medium">10%</div>
+                <div class="text-steel/80">GDPR, MiCA, exchange agreements.</div>
+
+                <div>Reserve & Contingency</div>
+                <div class="text-aqua font-medium">10%</div>
+                <div class="text-steel/80">Buffer for partnerships or extended runway.</div>
+              </div>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Milestone Impact</h3>
+              <ul class="space-y-1 text-[14px]">
+                <li>💡 <strong class="text-ivory">Funding Secured (Q2 2026):</strong> Team full-time, beta ready for private test.</li>
+                <li>🚀 <strong class="text-ivory">+6 Months:</strong> Public beta live, first traders onboarded.</li>
+                <li>📈 <strong class="text-ivory">+12 Months:</strong> 100 paying users, €2–5K MRR, seed-ready metrics.</li>
+              </ul>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              One lean round to turn readiness into recurring revenue.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Donut Chart -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 flex flex-col items-center">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-4">Use of Funds Allocation</h4>
+              <svg viewBox="0 0 320 320" class="w-72 h-72" role="img" aria-label="Use of funds donut chart">
+                <circle cx="160" cy="160" r="80" stroke="rgba(255,255,255,0.1)" stroke-width="40" fill="none" />
+                <circle cx="160" cy="160" r="80"
+                  stroke="#00A7A7" stroke-width="40" stroke-dasharray="100 565" stroke-dashoffset="0" fill="none" />
+                <circle cx="160" cy="160" r="80"
+                  stroke="#14B8A6" stroke-width="40" stroke-dasharray="62.5 565" stroke-dashoffset="-100" fill="none" />
+                <circle cx="160" cy="160" r="80"
+                  stroke="#94A3B8" stroke-width="40" stroke-dasharray="37.5 565" stroke-dashoffset="-162.5" fill="none" />
+                <circle cx="160" cy="160" r="80"
+                  stroke="#ECA72C" stroke-width="40" stroke-dasharray="25 565" stroke-dashoffset="-200" fill="none" />
+                <circle cx="160" cy="160" r="80"
+                  stroke="#6B7280" stroke-width="40" stroke-dasharray="25 565" stroke-dashoffset="-225" fill="none" />
+                <text x="160" y="165" text-anchor="middle" class="fill-ivory font-semibold text-[13px]">€150–200K</text>
+              </svg>
+              <div class="grid grid-cols-2 gap-3 mt-4 text-[12px] text-steel/80">
+                <div>🧠 Product & ML – 40%</div>
+                <div>📣 Marketing – 25%</div>
+                <div>⚙️ Infra – 15%</div>
+                <div>⚖️ Legal – 10%</div>
+                <div>💰 Reserve – 10%</div>
+              </div>
+            </div>
+
+            <!-- Milestone Flow -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Milestone Flow</h4>
+              <svg viewBox="0 0 580 120" class="w-full" role="img" aria-label="Funding milestone flow">
+                <defs>
+                  <marker id="arrowFlow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrowFlow)">
+                  <line x1="60" y1="60" x2="520" y2="60" />
+                </g>
+                <g text-anchor="middle" class="fill-ivory text-[12px]">
+                  <circle cx="100" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="100" y="64">Team</text>
+                  <circle cx="240" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="240" y="64">Beta</text>
+                  <circle cx="380" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="380" y="64">Users</text>
+                  <circle cx="520" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="520" y="64">Revenue</text>
+                </g>
+              </svg>
+              <p class="mt-3 text-[11px] text-steel/70">Lean pre-seed round → full-time team → public beta → first users → recurring revenue.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 14 — The Ask & Next Milestones -->
+    <section id="the-ask" class="slide snap-start" data-bg="3" aria-labelledby="ask-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Narrative -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">The Ask & Next Milestones</p>
+              <h2 id="ask-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                One year of execution to go from ready → revenue.
+              </h2>
+            </header>
+
+            <!-- The Ask -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Ask</h3>
+              <p class="text-[15px] leading-relaxed text-steel">
+                We’re raising <span class="text-ivory font-medium">€150K–€200K</span> at a
+                <span class="text-ivory font-medium">€1.8M–€2.5M</span> pre-money valuation to fund
+                one year of full-time execution — culminating in a live beta,
+                first 100 paying users, and <span class="text-ivory font-medium">€2K–€5K MRR</span>.
+              </p>
+            </section>
+
+            <!-- What This Round Achieves -->
+            <section class="space-y-3">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">What This Round Achieves</h3>
+              <div class="grid grid-cols-3 gap-x-3 text-[13px] leading-relaxed">
+                <div class="font-semibold text-ivory">Milestone</div>
+                <div class="font-semibold text-ivory">Timeline</div>
+                <div class="font-semibold text-ivory">Outcome</div>
+
+                <div>Full-Time Team Activation</div>
+                <div class="text-steel">Q2 2026</div>
+                <div class="text-steel/80">4-person team fully active.</div>
+
+                <div>Public Beta Launch</div>
+                <div class="text-steel">Q3–Q4 2026</div>
+                <div class="text-steel/80">Platform live, dashboard public.</div>
+
+                <div>Initial Monetization</div>
+                <div class="text-steel">Q4 2026</div>
+                <div class="text-steel/80">First 100 users, €2K–€5K MRR.</div>
+
+                <div>Seed-Readiness</div>
+                <div class="text-steel">Q1 2027</div>
+                <div class="text-steel/80">Validated traction, metrics pack ready.</div>
+              </div>
+            </section>
+
+            <!-- Funding Impact -->
+            <section class="space-y-2">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Impact</h3>
+              <ul class="space-y-1 text-[15px] leading-relaxed">
+                <li>🚀 Converts five years of R&D into a commercially validated beta.</li>
+                <li>🤖 Demonstrates AI precision & transparency in live trading.</li>
+                <li>🌍 Builds early community & brand trust for long-term growth.</li>
+              </ul>
+            </section>
+
+            <section class="space-y-2">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Investor Return Path</h3>
+              <p class="text-[15px] text-steel leading-relaxed">
+                <span class="text-ivory font-medium">Seed Round (Q2 2027):</span> Target €1M–€1.5M to scale user acquisition and
+                expand to other asset classes (FX, equities).
+              </p>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              1DES is not an idea — it’s a working system at the edge of launch.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Central Quote -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 text-center">
+              <blockquote class="text-2xl font-semibold text-ivory leading-snug">
+                “We’ve built the foundation — this round powers the launch.”
+              </blockquote>
+            </div>
+
+            <!-- Milestone Flow -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Milestone Path</h4>
+              <svg viewBox="0 0 600 120" class="w-full" role="img" aria-label="Milestone flow: team to revenue to seed">
+                <defs>
+                  <marker id="arrowAsk" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrowAsk)">
+                  <line x1="60" y1="60" x2="540" y2="60"/>
+                </g>
+                <g text-anchor="middle" class="fill-ivory text-[12px] font-semibold">
+                  <circle cx="100" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="100" y="64">Team</text>
+                  <circle cx="220" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="220" y="64">Beta</text>
+                  <circle cx="340" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="340" y="64">Users</text>
+                  <circle cx="460" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="460" y="64">MRR</text>
+                  <circle cx="580" cy="60" r="18" class="fill-amber/30 stroke-amber"/><text x="580" y="64">Seed</text>
+                </g>
+              </svg>
+              <p class="mt-3 text-[11px] text-steel/70 text-center">
+                Full-time Team → Beta → Paying Users → MRR → Seed Readiness
+              </p>
+            </div>
+
+            <p class="text-center text-[12px] text-steel/80 mt-3">Lean • Measurable • Investor-Ready</p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Slide 15 — Closing / Contact -->
+    <section id="closing-contact" class="slide snap-start" data-bg="2" aria-labelledby="closing-contact-title">
+      <div class="slide-inner">
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
+
+          <!-- LEFT: Message -->
+          <div class="lg:col-span-6 space-y-8">
+            <header>
+              <p class="text-xs tracking-[0.2em] uppercase text-aqua">Closing / Contact</p>
+              <h2 id="closing-contact-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+                1DES — AI trading that learns as fast as the market.
+              </h2>
+            </header>
+
+            <section class="space-y-3">
+              <p class="text-[15px] leading-relaxed text-steel">
+                We’ve spent five years building an adaptive, event-driven AI system that bridges institutional intelligence and retail accessibility. Now, we’re ready to go full-time, launch publicly, and prove that intelligent, transparent trading can belong to everyone.
+              </p>
+            </section>
+
+            <section class="space-y-2">
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Next Chapter</h3>
+              <ul class="space-y-1 text-[15px] leading-relaxed">
+                <li>🎯 <span class="text-ivory font-medium">Goal:</span> live beta, first paying users, and sustainable revenue within 12 months.</li>
+                <li>💶 <span class="text-ivory font-medium">Ask:</span> €150–200K pre-seed to power one year of focused execution.</li>
+              </ul>
+            </section>
+
+            <!-- Contact -->
+            <section class="space-y-4">
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Contact</h3>
+              <div class="grid sm:grid-cols-2 gap-3 text-[14px]">
+                <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
+                  <p class="text-steel text-xs uppercase tracking-wide">Email</p>
+                  <a href="mailto:hello@1des.com" class="text-ivory font-medium hover:underline">hello@1des.com</a>
+                </div>
+                <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
+                  <p class="text-steel text-xs uppercase tracking-wide">Website</p>
+                  <a href="https://www.1des.com" class="text-ivory font-medium hover:underline" target="_blank" rel="noopener">www.1des.com</a>
+                </div>
+                <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
+                  <p class="text-steel text-xs uppercase tracking-wide">Locations</p>
+                  <p class="text-ivory font-medium">Barcelona • Rasht • Karaj • Maastricht</p>
+                </div>
+                <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
+                  <p class="text-steel text-xs uppercase tracking-wide">Connect</p>
+                  <p class="text-ivory font-medium"><a href="https://x.com/the1des" target="_blank">X</a> / <a href="https://www.linkedin.com/company/1des/" target="_blank">LinkedIn</a> / <a href="https://t.me/The1DES" target="_blank">Telegram</a></p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 pt-1">
+                <a href="mailto:hello@1des.com" class="inline-flex items-center rounded-full bg-aqua/20 px-4 py-2 text-aqua hover:bg-aqua/30 focus:outline-none focus:ring-2 focus:ring-aqua/60">
+                  <span class="mr-2">✉️</span> Get in touch
+                </a>
+                <a href="https://1des.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-full border border-steel/40 px-4 py-2 text-ivory hover:bg-charcoal/40 focus:outline-none focus:ring-2 focus:ring-aqua/40">
+                  Visit website
+                </a>
+              </div>
+            </section>
+
+            <p class="italic text-[13px] text-steel/80">
+              Five years of building — one year to launch. Join us in making intelligent, transparent trading accessible to everyone.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual -->
+          <aside class="lg:col-span-6 space-y-6">
+            <!-- Hero graphic: dark gradient + faint trading lines + center statement -->
+            <div class="relative overflow-hidden rounded-xl border border-steel/30 bg-gradient-to-br from-navy/80 to-charcoal/60 p-6">
+              <svg viewBox="0 0 640 260" class="absolute inset-0 w-full h-full" aria-hidden="true">
+                <!-- faint grid -->
+                <g class="stroke-steel/10" stroke-width="1">
+                  <line x1="0" y1="40" x2="640" y2="40"/><line x1="0" y1="80" x2="640" y2="80"/>
+                  <line x1="0" y1="120" x2="640" y2="120"/><line x1="0" y1="160" x2="640" y2="160"/>
+                  <line x1="0" y1="200" x2="640" y2="200"/>
+                </g>
+                <!-- faint chart line -->
+                <path d="M0 190 C80 160, 120 210, 180 150 S300 110, 360 160 480 120, 640 150" class="fill-none stroke-aqua/30" stroke-width="2"/>
+              </svg>
+              <div class="relative text-center py-16">
+                <h3 class="text-2xl sm:text-3xl font-semibold text-ivory">
+                  AI trading that learns as fast as the market.
+                </h3>
+                <p class="mt-2 text-[13px] text-steel/80">Adaptive • Transparent • Non-custodial</p>
+              </div>
+            </div>
+
+            <!-- Mini world map with team locations -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Where we are</h4>
+              <svg viewBox="0 0 640 220" class="w-full" role="img" aria-label="Team locations: Maastricht, Barcelona, Rasht, Karaj">
+                <!-- simplified world outline (hinted) -->
+                <path d="M60,120 C100,90 150,100 200,110 C230,115 260,120 300,110 C340,100 380,90 420,100 C470,115 520,120 560,115"
+                      class="fill-none stroke-steel/25" stroke-width="2"/>
+                <!-- pins -->
+                <!-- Maastricht (~x:260,y:95), Barcelona (~x:245,y:110) -->
+                <circle cx="260" cy="95" r="5" class="fill-aqua"/><text x="268" y="98" class="fill-ivory text-[10px]">Maastricht</text>
+                <circle cx="245" cy="110" r="5" class="fill-aqua"/><text x="253" y="113" class="fill-ivory text-[10px]">Barcelona</text>
+                <!-- Rasht/Karaj (Iran ~x:380–390,y:110) -->
+                <circle cx="388" cy="110" r="5" class="fill-aqua"/><text x="396" y="113" class="fill-ivory text-[10px]">Rasht</text>
+                <circle cx="395" cy="118" r="5" class="fill-aqua"/><text x="403" y="121" class="fill-ivory text-[10px]">Karaj</text>
+              </svg>
+              <p class="mt-2 text-[11px] text-steel/70">Global, lean, and synchronized.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="scrim" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- Fixed bottom-right pager -->
+  <nav id="pager" class="fixed right-6 bottom-6 z-40 flex items-center gap-2">
+    <button class="pager-btn" data-prev aria-label="Previous slide">← Prev</button>
+    <button class="pager-btn" data-next aria-label="Next slide">Next →</button>
+  </nav>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
