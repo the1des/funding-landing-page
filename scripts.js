@@ -22,6 +22,21 @@
     else el.classList.add('is-visible');
   });
 
+  /* Background pairing */
+  const bgPairs = [
+    [1, 2],
+    [1, 2],
+    [3, 4],
+    [4, 3],
+  ];
+  for (let i = 0; i < sections.length; i += 2) {
+    const pair = (i === 0)
+      ? [1, 2]
+      : bgPairs[Math.floor(Math.random() * bgPairs.length)];
+    sections[i].dataset.bg = pair[0];
+    if (sections[i + 1]) sections[i + 1].dataset.bg = pair[1];
+  }
+
   /* Pager (fixed) */
   const pager = document.getElementById('pager');
   const prevBtn = pager.querySelector('[data-prev]');

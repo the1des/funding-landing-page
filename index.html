@@ -323,11 +323,11 @@
             <section class="space-y-4">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">What We Do</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>⚡ Ingests <span class="text-ivory">live market streams</span> from multiple exchanges.</li>
-                <li>🧩 Processes market data through <span class="text-ivory">our own custom data-processing pipeline</span>.</li>
-                <li>🤖 Feeds ML models (LSTM, PatchTST) trained for accuracy + drawdown control.</li>
-                <li>🚀 Executes trades instantly through exchange APIs — fully non-custodial, audit-ready.</li>
-                <li>🔁 Continuously retrains using <span class="text-ivory">reinforcement loops</span> from live performance.</li>
+                <li>⚡ Live multi-exchange ingestion.</li>
+                <li>🧩 Proprietary data-processing pipeline.</li>
+                <li>🤖 LSTM, PatchTST, and classifiers in one adaptive model.</li>
+                <li>🚀 Non-custodial, API-first execution.</li>
+                <li>🔁 Continuous reinforcement retraining.</li>
               </ul>
             </section>
 
@@ -340,8 +340,6 @@
                     <li>Market speed</li>
                     <li>Emotional bias</li>
                     <li>Lack of access</li>
-                    <li>Trust deficit</li>
-                    <li>Complexity</li>
                   </ul>
                 </div>
                 <div>
@@ -350,8 +348,6 @@
                     <li>Real-time adaptive ML models</li>
                     <li>Automated, rule-based execution</li>
                     <li>Institutional-grade AI tools</li>
-                    <li>Transparent & versioned models</li>
-                    <li>Unified dashboard with clear signals</li>
                   </ul>
                 </div>
               </div>
@@ -400,11 +396,11 @@
                 <p class="text-[11px] text-steel/80">Execution latency</p>
               </div>
               <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&gt; 95 %</p>
+                <p class="text-xl font-semibold text-aqua">&gt; 99.9 %</p>
                 <p class="text-[11px] text-steel/80">System uptime</p>
               </div>
               <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">€ &lt; 100 / mo</p>
+                <p class="text-xl font-semibold text-aqua">&lt; €100 / mo</p>
                 <p class="text-[11px] text-steel/80">Infra cost</p>
               </div>
             </div>
@@ -431,34 +427,20 @@
 
             <section class="space-y-4">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Three Integrated Layers</h3>
-              <div class="space-y-4 text-[15px] leading-relaxed">
+              <div class="space-y-3 text-[15px] leading-relaxed">
                 <div>
                   <p class="font-semibold text-ivory">🧠 AI Layer</p>
-                  <p class="text-steel">Hybrid learning (binary + unsupervised) adapts to evolving markets.</p>
-                  <p class="text-[13px] text-steel/70">Continuously improving intelligence — reacts to data, not static rules.</p>
+                  <p class="text-steel text-sm">Hybrid learning that re-tunes itself on every market regime.</p>
                 </div>
                 <div>
                   <p class="font-semibold text-ivory">⚙️ Automation Layer</p>
-                  <p class="text-steel">Executes trades via non-custodial exchange APIs in milliseconds.</p>
-                  <p class="text-[13px] text-steel/70">Emotion-free, consistent, and real-time performance.</p>
+                  <p class="text-steel text-sm">Non-custodial execution that fires orders in milliseconds.</p>
                 </div>
                 <div>
                   <p class="font-semibold text-ivory">📊 Dashboard Layer</p>
-                  <p class="text-steel">Visualizes signals, accuracy, positions, and logs.</p>
-                  <p class="text-[13px] text-steel/70">Full transparency — users see what the AI decides and why.</p>
+                  <p class="text-steel text-sm">Signal, accuracy, and log transparency in a single view.</p>
                 </div>
               </div>
-            </section>
-
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Key Features</h3>
-              <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>🧠 <span class="text-ivory">Hybrid Learning Engine</span> — binary classifiers + unsupervised pattern discovery.</li>
-                <li>⚙️ <span class="text-ivory">Autonomous Execution</span> — trades under 100 ms.</li>
-                <li>🔍 <span class="text-ivory">Transparent Model Governance</span> — versioned models + performance metrics.</li>
-                <li>🔄 <span class="text-ivory">Continuous Adaptation Loop</span> — learns from live feedback.</li>
-                <li>📊 <span class="text-ivory">Unified Dashboard</span> — visualizes trades, accuracy, and risk metrics.</li>
-              </ul>
             </section>
 
             <p class="italic text-[13px] text-steel/80">
@@ -522,6 +504,18 @@
                 <p class="text-[11px] text-steel/80">Uptime</p>
               </div>
             </div>
+
+            <!-- Key features card -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Key Features</h4>
+              <ul class="mt-3 space-y-2 text-[15px] leading-relaxed">
+                <li>🧠 Hybrid learning engine</li>
+                <li>⚙️ Autonomous execution &lt; 100 ms</li>
+                <li>🔍 Transparent, versioned models</li>
+                <li>🔄 Continuous feedback loop</li>
+                <li>📊 Unified trading dashboard</li>
+              </ul>
+            </div>
           </aside>
         </div>
       </div>
@@ -530,7 +524,7 @@
     </section>
 
     <!-- Slide 05 — Technology & Moat -->
-    <section id="technology-moat" class="slide snap-start" data-bg="2" aria-labelledby="technology-moat-title">
+    <section id="technology-moat" class="slide snap-start" data-bg="3" aria-labelledby="technology-moat-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -539,7 +533,7 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Technology & Moat</p>
               <h2 id="technology-moat-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                An event-driven AI architecture that learns and reacts in real time.
+                Event-driven AI that learns and reacts in real time.
               </h2>
             </header>
 
@@ -547,40 +541,13 @@
             <section class="space-y-4">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Core Components</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>⚡ <strong class="text-ivory">Event-Driven Ingestion</strong> — Kafka + Faust stream millions of market events &lt; 100 ms latency.</li>
-                <li>🧮 <strong class="text-ivory">Feature Generator</strong> — builds EMA, RSI, volatility, depth & momentum features in real time.</li>
-                <li>🧠 <strong class="text-ivory">AI Model Core</strong> — hybrid of binary classification & time-series models (PatchTST, LSTM).</li>
-                <li>🔍 <strong class="text-ivory">Signal Engine</strong> — merges multi-model outputs into adaptive trade signals.</li>
-                <li>🚀 <strong class="text-ivory">Trade Executor</strong> — non-custodial API orders &lt; 100 ms.</li>
-                <li>🔄 <strong class="text-ivory">Feedback Loop</strong> — post-trade metrics → continuous model retraining.</li>
+                <li>⚡ Event-driven ingestion — Kafka + Faust &lt; 100 ms.</li>
+                <li>🧮 Feature generator — live EMA/RSI/volatility set.</li>
+                <li>🧠 AI core — PatchTST + LSTM + classifiers + clustering.</li>
+                <li>🔍 Signal engine — fused confidence scoring.</li>
+                <li>🚀 Trade executor — non-custodial API orders.</li>
+                <li>🔄 Feedback loop — post-trade retraining.</li>
               </ul>
-            </section>
-
-            <!-- Moat -->
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Technical Moat</h3>
-              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[15px]">
-                <div>
-                  <p class="text-steel text-xs uppercase tracking-wide">Advantage</p>
-                  <ul class="space-y-1">
-                    <li>Event-Driven AI</li>
-                    <li>Hybrid Intelligence</li>
-                    <li>Continuous Learning</li>
-                    <li>Model Governance</li>
-                    <li>Scalable & Efficient</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-steel text-xs uppercase tracking-wide">Description</p>
-                  <ul class="space-y-1 text-ivory">
-                    <li>Every event → decision, no polling.</li>
-                    <li>Binary + forecast + unsupervised fusion.</li>
-                    <li>Live feedback refines models.</li>
-                    <li>Versioned metrics for transparency.</li>
-                    <li>Lean micro-services &lt; €100/mo.</li>
-                  </ul>
-                </div>
-              </div>
             </section>
 
             <p class="italic text-[13px] text-steel/80">
@@ -621,20 +588,16 @@
               </svg>
             </div>
 
-            <!-- Metrics / proof points -->
-            <div class="grid grid-cols-3 gap-3 text-center">
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&gt; 99 %</p>
-                <p class="text-[11px] text-steel/80">Uptime</p>
-              </div>
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&lt; 100 ms</p>
-                <p class="text-[11px] text-steel/80">Latency</p>
-              </div>
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">5 yrs R&D</p>
-                <p class="text-[11px] text-steel/80">Continuous dev</p>
-              </div>
+            <!-- Technical Moat -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Technical Moat</h4>
+              <ul class="mt-4 space-y-2 text-[15px] leading-relaxed">
+                <li>⚡ Event-driven AI — every tick triggers logic.</li>
+                <li>🧠 Hybrid intelligence — classifiers + forecasts + unsupervised.</li>
+                <li>🔄 Continuous learning — live metrics feed retraining.</li>
+                <li>🔍 Model governance — versioned, auditable signals.</li>
+                <li>🧱 Lean infra — micro-services &lt; €100/mo to run.</li>
+              </ul>
             </div>
           </aside>
         </div>
@@ -644,7 +607,7 @@
     </section>
 
     <!-- Slide 06 — Market & Opportunity -->
-    <section id="market-opportunity" class="slide snap-start" data-bg="3" aria-labelledby="market-opportunity-title">
+    <section id="market-opportunity" class="slide snap-start" data-bg="1" aria-labelledby="market-opportunity-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -660,37 +623,11 @@
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Dynamics</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>🌍 <span class="text-ivory font-medium">560M+</span> crypto owners; <span class="text-ivory font-medium">50M+</span> active users/traders (+<span class="text-ivory font-medium">10M</span> ~25% YoY).</li>
-                <li>🤖 <span class="text-ivory font-medium">60–70%</span> of crypto volume algorithmic — industry estimate <span class="text-steel/70">(unverified)</span>.</li>
-                <li>🧩 Retail AI/bot usage ≈ <span class="text-ivory font-medium">36.6%</span> of crypto traders.</li>
-                <li>📈 AI + algo trading growing &gt; <span class="text-ivory font-medium">12% CAGR</span> → <span class="text-ivory font-medium">$35B+</span> by 2029.</li>
+                <li>🌍 <span class="text-ivory font-medium">560M+</span> crypto owners; <span class="text-ivory font-medium">50M+</span> active traders (+25% YoY).</li>
+                <li>🤖 <span class="text-ivory font-medium">36.6%</span> of retail traders run AI/bots.</li>
+                <li>🧩 <span class="text-ivory font-medium">60–70%</span> of total crypto volume is algorithmic.</li>
+                <li>📈 AI + algo trading → <span class="text-ivory font-medium">$35B+</span> by 2029.</li>
               </ul>
-            </section>
-
-            <!-- Market sizing -->
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Market Sizing (Crypto Focus)</h3>
-              <div class="grid grid-cols-3 gap-3 text-[13px]">
-                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                  <p class="text-xs uppercase tracking-wide text-steel">TAM</p>
-                  <p class="text-ivory font-semibold">Global retail + semi-pro</p>
-                  <p class="text-steel mt-1">2024: <span class="text-ivory">$25B</span>/yr</p>
-                  <p class="text-steel">2029: <span class="text-ivory">&gt;$35B</span>/yr</p>
-                </div>
-                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                  <p class="text-xs uppercase tracking-wide text-steel">SAM</p>
-                  <p class="text-ivory font-semibold">Crypto AI/automation users</p>
-                  <p class="text-steel mt-1">2024: <span class="text-ivory">~10M</span> ≈ <span class="text-ivory">$2B</span>/yr</p>
-                  <p class="text-steel">2029: <span class="text-ivory">~20M</span> ≈ <span class="text-ivory">$4B</span>/yr</p>
-                </div>
-                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                  <p class="text-xs uppercase tracking-wide text-steel">SOM (1DES)</p>
-                  <p class="text-ivory font-semibold">Entry wedge: semi-pro</p>
-                  <p class="text-steel mt-1">≈ <span class="text-ivory">100k</span> users → <span class="text-ivory">$100M</span>/yr</p>
-                  <p class="text-steel">→ <span class="text-ivory">&gt;$200M</span>/yr long-term</p>
-                </div>
-              </div>
-              <p class="text-[13px] text-steel/80">Even <span class="text-aqua font-semibold">0.1%</span> of active crypto traders ≈ <span class="text-aqua font-semibold">100k</span> users → €5–10M ARR potential.</p>
             </section>
 
             <section class="space-y-3">
@@ -712,58 +649,50 @@
               </ul>
             </section>
 
-            <!-- References -->
-            <p class="text-[12px] text-steel/70">
-              Sources:&nbsp;
-              <a href="https://www.triple-a.io/cryptocurrency-ownership-data" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TripleA — 560M+ owners</a>;
-              <a href="https://a16zcrypto.com/posts/article/estimating-crypto-users/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z — 50M+ active users</a>;
-              <a href="https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z 2025 — +10M (~25%) growth</a>;
-              <span class="underline decoration-dotted">Industry estimate — 60–70% algo volume (unverified)</span>;
-              <a href="https://www.tradingview.com/news/financemagnates%3Aca995b3fc094b%3A0-bots-bets-and-memes-37-of-crypto-traders-double-down-on-ai/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TradingView / FinanceMagnates — 36.6% use AI/bots</a>;
-              <a href="https://www.grandviewresearch.com/industry-analysis/algorithmic-trading-market-report" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Grand View Research</a>;
-              <a href="https://www.sphericalinsights.com/es/reports/algorithmic-trading-market" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Spherical Insights</a>;
-              <a href="https://market.us/report/ai-in-trading-market/#utm_source=chatgpt.com" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Market.us</a>.
-              Illustrative sizing.
-            </p>
           </div>
 
           <!-- RIGHT: Visuals -->
           <aside class="lg:col-span-6 space-y-6">
-            <!-- Adoption line chart -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Retail AI Trading Adoption</h4>
-              <svg viewBox="0 0 520 160" class="w-full mt-3" role="img" aria-label="Retail AI trading adoption rising from 10% to 25%">
-                <!-- axes -->
-                <line x1="40" y1="130" x2="490" y2="130" class="stroke-steel/30" stroke-width="1"/>
-                <line x1="40" y1="30" x2="40" y2="130" class="stroke-steel/30" stroke-width="1"/>
-                <!-- line -->
-                <path d="M40 120 C150 110, 280 80, 490 60" class="fill-none stroke-aqua" stroke-width="3"/>
-                <!-- points -->
-                <circle cx="40" cy="120" r="3" class="fill-aqua"/>
-                <circle cx="490" cy="60" r="3" class="fill-aqua"/>
-                <!-- labels -->
-                <text x="40" y="145" class="fill-steel text-[10px]">2024</text>
-                <text x="460" y="145" class="fill-steel text-[10px]">2029</text>
-                <text x="18" y="122" class="fill-steel text-[10px]">10%</text>
-                <text x="18" y="62" class="fill-steel text-[10px]">25%</text>
-              </svg>
-              <p class="mt-2 text-[11px] text-steel/70">Illustrative adoption trajectory; not to scale.</p>
+            <!-- Market sizing cards -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 space-y-3">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Market Sizing (Crypto Focus)</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[13px]">
+                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                  <p class="text-xs uppercase tracking-wide text-steel">TAM</p>
+                  <p class="text-ivory font-semibold leading-tight mt-1">Global retail + semi-pro</p>
+                  <p class="text-steel mt-2">2024: <span class="text-ivory">$25B</span>/yr</p>
+                  <p class="text-steel">2029: <span class="text-ivory">&gt;$35B</span>/yr</p>
+                </div>
+                <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                  <p class="text-xs uppercase tracking-wide text-steel">SAM</p>
+                  <p class="text-ivory font-semibold leading-tight mt-1">Crypto AI/automation users</p>
+                  <p class="text-steel mt-2">2024: <span class="text-ivory">~10M</span> ≈ <span class="text-ivory">$2B</span>/yr</p>
+                  <p class="text-steel">2029: <span class="text-ivory">~20M</span> ≈ <span class="text-ivory">$4B</span>/yr</p>
+                </div>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30 text-[13px]">
+                <p class="text-xs uppercase tracking-wide text-steel">SOM</p>
+                <p class="text-ivory font-semibold leading-tight mt-1">1DES entry wedge</p>
+                <p class="text-steel mt-2">≈ <span class="text-ivory">100k</span> users → <span class="text-ivory">$100M</span>/yr</p>
+                <p class="text-steel">→ <span class="text-ivory">&gt;$200M</span>/yr long-term</p>
+              </div>
+              <p class="text-[11px] text-steel/70">0.1% of active crypto traders ≈ 100k users → €5–10M ARR potential.</p>
             </div>
 
-            <!-- TAM → SAM → SOM funnel -->
+            <!-- References -->
             <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Market Funnel</h4>
-              <svg viewBox="0 0 520 180" class="w-full mt-3" role="img" aria-label="TAM to SAM to SOM funnel with 1DES wedge">
-                <!-- funnel bars -->
-                <rect x="30" y="30" width="460" height="28" rx="6" class="fill-navy/60 stroke-steel/30"/>
-                <rect x="60" y="78" width="400" height="28" rx="6" class="fill-navy/60 stroke-steel/30"/>
-                <rect x="90" y="126" width="220" height="28" rx="6" class="fill-amber/50 stroke-amber/60"/>
-                <!-- labels -->
-                <text x="40" y="48" class="fill-steel text-[11px]">TAM — $25B → $35B+</text>
-                <text x="70" y="96" class="fill-steel text-[11px]">SAM — ~10M → ~20M users</text>
-                <text x="100" y="144" class="fill-ivory text-[11px] font-semibold">SOM (1DES wedge) — ~100k users</text>
-              </svg>
-              <p class="mt-2 text-[11px] text-steel/70">1DES targets the crypto automation wedge first, then expands.</p>
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Sources</h4>
+              <ul class="mt-3 space-y-1 text-[11px] text-steel/80">
+                <li><a href="https://www.triple-a.io/cryptocurrency-ownership-data" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TripleA — 560M+ owners</a></li>
+                <li><a href="https://a16zcrypto.com/posts/article/estimating-crypto-users/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z — 50M+ active users</a></li>
+                <li><a href="https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">a16z 2025 — +10M (~25%) growth</a></li>
+                <li><span class="underline decoration-dotted">Industry estimate — 60–70% algo volume (unverified)</span></li>
+                <li><a href="https://www.tradingview.com/news/financemagnates%3Aca995b3fc094b%3A0-bots-bets-and-memes-37-of-crypto-traders-double-down-on-ai/" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">TradingView / FinanceMagnates — 36.6% AI/bot use</a></li>
+                <li><a href="https://www.grandviewresearch.com/industry-analysis/algorithmic-trading-market-report" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Grand View Research — algo trading CAGR</a></li>
+                <li><a href="https://www.sphericalinsights.com/es/reports/algorithmic-trading-market" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Spherical Insights — market sizing</a></li>
+                <li><a href="https://market.us/report/ai-in-trading-market/#utm_source=chatgpt.com" target="_blank" rel="nofollow noopener" class="underline hover:text-aqua">Market.us — AI in trading</a></li>
+              </ul>
+              <p class="text-[10px] text-steel/60 mt-2">Indicative data points; sizing is illustrative.</p>
             </div>
 
             <p class="text-[12px] text-steel/80 italic">1DES operates where retail access meets AI performance.</p>
@@ -775,7 +704,7 @@
     </section>
 
     <!-- Slide 07 — Business Model -->
-    <section id="business-model" class="slide snap-start" data-bg="4" aria-labelledby="business-model-title">
+    <section id="business-model" class="slide snap-start" data-bg="2" aria-labelledby="business-model-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -784,54 +713,32 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Business Model</p>
               <h2 id="business-model-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                A transparent, subscription-based model that scales with usage and performance.
+                Subscription-based revenue that grows with usage.
               </h2>
             </header>
 
             <!-- Revenue Structure -->
-            <section class="space-y-4">
+            <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Revenue Streams</h3>
               <ul class="space-y-3 text-[15px] leading-relaxed">
-                <li>1️⃣ <strong class="text-ivory">Subscription (SaaS)</strong> — monthly plans by trading volume and features. <span class="text-steel/80">80–85% margin</span>.</li>
-                <li>2️⃣ <strong class="text-ivory">Performance Add-on</strong> — optional 5–10% success-based fee for premium users. <span class="text-steel/80">90% margin</span>.</li>
-                <li>3️⃣ <strong class="text-ivory">Data & API Licensing</strong> — anonymized AI signal feeds for partners/exchanges. <span class="text-steel/80">70–80% margin</span>.</li>
-                <li>4️⃣ <strong class="text-ivory">Future Marketplace</strong> — curated third-party strategy modules. <span class="text-steel/80">70/30 revenue share</span>.</li>
+                <li>1️⃣ <strong class="text-ivory">Subscription (SaaS)</strong> — tiered plans by volume/features; 80–85% margin.</li>
+                <li>2️⃣ <strong class="text-ivory">Performance Add-on</strong> — optional 5–10% success fee for pro users.</li>
+                <li>3️⃣ <strong class="text-ivory">Data & API Licensing</strong> — anonymized AI signal feeds for partners.</li>
+                <li>4️⃣ <strong class="text-ivory">Strategy Marketplace</strong> — curated third-party modules with 70/30 split.</li>
               </ul>
-            </section>
-
-            <!-- Pricing -->
-            <section class="space-y-4">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Pricing Tiers (Indicative)</h3>
-              <div class="grid grid-cols-3 gap-3 text-center text-[13px]">
-                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
-                  <p class="text-sm font-semibold text-ivory">Starter</p>
-                  <p class="text-steel text-xs">€19–€29</p>
-                  <p class="text-[11px] text-steel/70 mt-1">Full AI execution<br>Limited trading volume</p>
-                </div>
-                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
-                  <p class="text-sm font-semibold text-ivory">Pro</p>
-                  <p class="text-steel text-xs">€49–€99</p>
-                  <p class="text-[11px] text-steel/70 mt-1">Full automation<br>Higher volume cap + dashboard</p>
-                </div>
-                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
-                  <p class="text-sm font-semibold text-ivory">Institutional Lite</p>
-                  <p class="text-steel text-xs">€199–€299</p>
-                  <p class="text-[11px] text-steel/70 mt-1">API access<br>Custom volume & metrics</p>
-                </div>
-              </div>
-              <p class="text-[13px] text-steel/80">Low CAC + high retention → strong unit economics. <span class="text-ivory font-medium">ARPU ≈ €60/mo</span>.</p>
             </section>
 
             <!-- Unit Economics -->
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Early Unit Economics</h3>
               <ul class="space-y-1 text-[14px]">
-                <li>🎯 CAC: <span class="text-ivory">€30–40</span> → mostly community-driven.</li>
-                <li>💎 LTV: <span class="text-ivory">€500–600</span> → 9–12 month retention.</li>
-                <li>💰 Gross Margin: <span class="text-ivory">&gt;80%</span> → infra cost &lt; €100/mo.</li>
+                <li>🎯 CAC: <span class="text-ivory">€30–40</span> via community / referrals.</li>
+                <li>💎 LTV: <span class="text-ivory">€500–600</span> from 9–12 month retention.</li>
+                <li>💰 Gross Margin: <span class="text-ivory">&gt;80%</span>; infra &lt; €100/mo.</li>
                 <li>📈 Breakeven: <span class="text-ivory">~120 paying users</span>.</li>
-                <li>🚀 Runway Goal: 12–15 months @ €150–200K raise → €5K MRR.</li>
+                <li>🚀 Raise goal: €150–200K → <span class="text-ivory">€5K MRR</span> runway.</li>
               </ul>
+              <p class="text-[13px] text-steel/80">Low CAC + high retention → strong unit economics (ARPU ≈ €60/mo).</p>
             </section>
 
             <p class="italic text-[13px] text-steel/80">
@@ -868,6 +775,28 @@
               </svg>
               <p class="mt-4 text-[11px] text-steel/70">More users → more trades → more feedback data → smarter models → better results → more users.</p>
             </div>
+
+            <!-- Pricing tiers -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Pricing Tiers (Indicative)</h4>
+              <div class="grid grid-cols-3 gap-3 text-center text-[13px]">
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Starter</p>
+                  <p class="text-steel text-xs">€19–€29</p>
+                  <p class="text-[11px] text-steel/70 mt-1">Full AI exec<br>Limited volume</p>
+                </div>
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Pro</p>
+                  <p class="text-steel text-xs">€49–€99</p>
+                  <p class="text-[11px] text-steel/70 mt-1">Automation + dashboard</p>
+                </div>
+                <div class="rounded-xl border border-steel/30 bg-charcoal/40 p-3">
+                  <p class="text-sm font-semibold text-ivory">Institutional Lite</p>
+                  <p class="text-steel text-xs">€199–€299</p>
+                  <p class="text-[11px] text-steel/70 mt-1">API / custom volume</p>
+                </div>
+              </div>
+            </div>
           </aside>
         </div>
       </div>
@@ -885,7 +814,7 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Traction & Validation</p>
               <h2 id="traction-validation-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                From a small experiment to a full trading brain — built step by step, proven line by line.
+                Traction from first prototype to proven trading brain.
               </h2>
             </header>
 
@@ -894,45 +823,14 @@
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Journey</h3>
               <ul class="space-y-3 text-[15px] leading-relaxed">
                 <li>
-                  <strong class="text-ivory">2020–2022 · The First Prototype</strong><br>
-                  What began as late-night code and curiosity turned into our first working AI trader.<br>
-                  We proved automated decisions could beat static rules — and learned where they couldn’t.
+                  <strong class="text-ivory">2020–2022 · Prototype</strong><br>
+                  Late-night build proved automated AI decisions could outperform static rules.
                 </li>
                 <li>
-                  <strong class="text-ivory">2022–2025 · The Rebuild and Maturity</strong><br>
-                  We tore it down and rebuilt from the ground up — event-driven, cloud-native, and fast enough for 10K+ users.<br>
-                  Today, 1DES runs on hybrid models, retrains in real time, and is ready for structured beta at scale.
+                  <strong class="text-ivory">2022–2025 · Rebuild</strong><br>
+                  Re-architected into an event-driven, cloud-native stack that retrains live for 10K+ users.
                 </li>
               </ul>
-            </section>
-
-            <!-- Current Validation -->
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">What’s Working</h3>
-              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[14px]">
-                <div>
-                  <p class="text-steel text-xs uppercase tracking-wide">Category</p>
-                  <ul class="space-y-1">
-                    <li>Architecture</li>
-                    <li>AI Core</li>
-                    <li>Reliability</li>
-                    <li>Cost Efficiency</li>
-                    <li>Scalability</li>
-                    <li>Compliance</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-steel text-xs uppercase tracking-wide">Proof</p>
-                  <ul class="space-y-1 text-ivory">
-                    <li>Event-driven micro-services &lt; 100 ms latency</li>
-                    <li>Hybrid models benchmarked on live crypto data</li>
-                    <li>&gt; 99 % uptime in long-run tests</li>
-                    <li>Infra cost &lt; €100 / month</li>
-                    <li>10K user capacity validated</li>
-                    <li>PCI/GDPR-ready versioning & logging</li>
-                  </ul>
-                </div>
-              </div>
             </section>
 
             <section class="space-y-2">
@@ -987,6 +885,35 @@
                 <p class="text-[11px] text-steel/80">Infra Cost</p>
               </div>
             </div>
+
+            <!-- What's Working -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">What’s Working</h4>
+              <div class="mt-4 grid grid-cols-2 gap-4 text-[13px]">
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Category</p>
+                  <ul class="space-y-1">
+                    <li>Architecture</li>
+                    <li>AI Core</li>
+                    <li>Reliability</li>
+                    <li>Cost Efficiency</li>
+                    <li>Scalability</li>
+                    <li>Compliance</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="text-steel text-xs uppercase tracking-wide">Proof</p>
+                  <ul class="space-y-1 text-ivory">
+                    <li>Event-driven micro-services &lt; 100 ms</li>
+                    <li>Hybrid models benchmarked on live data</li>
+                    <li>&gt; 99 % uptime long-run tests</li>
+                    <li>Infra cost &lt; €100 / month</li>
+                    <li>10K-user capacity validated</li>
+                    <li>PCI/GDPR-ready logging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </aside>
         </div>
       </div>
@@ -1004,14 +931,14 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Go-to-Market</p>
               <h2 id="gtm-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                From full-time kickoff to public beta and first revenue — steady, achievable growth.
+                Full-time kickoff to public beta and first ARR.
               </h2>
             </header>
 
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Purpose</h3>
               <p class="text-[15px] leading-relaxed text-steel">
-                Pre-seed enables full-time execution, beta finalization, onboarding the first <span class="text-ivory font-medium">100 paying users</span>, and reaching <span class="text-ivory font-medium">€2K–€5K MRR</span> within 12 months.
+                Pre-seed covers full-time build, beta polish, first <span class="text-ivory font-medium">100 paying users</span>, and <span class="text-ivory font-medium">€2K–€5K MRR</span> inside 12 months.
               </p>
             </section>
 
@@ -1019,20 +946,16 @@
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Acquisition Strategy</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>Invite-only onboarding → controlled scaling.</li>
-                <li>Transparency marketing — weekly model updates (X/Discord/Medium).</li>
-                <li>Referral incentives — early-adopter discounts & profit-share bonuses.</li>
-                <li>Influencer & quant collaborations to keep CAC low.</li>
-                <li>Educational series — <span class="text-ivory">“AI Trading Explained.”</span></li>
+                <li>Invite-only cohorts → measured scaling.</li>
+                <li>Weekly transparency drops on X / Discord / Medium.</li>
+                <li>Referral boosts — early discounts + profit-share perks.</li>
+                <li>Influencer + quant partners to cap CAC.</li>
+                <li>“AI Trading Explained” mini-series for education.</li>
               </ul>
             </section>
 
             <!-- Marketing Flywheel -->
             <section class="space-y-2">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Marketing Flywheel</h3>
-              <p class="text-[15px] leading-relaxed text-steel">
-                Transparency → Trust → Adoption → Data → Smarter AI → More Transparency.
-              </p>
               <p class="italic text-[13px] text-steel/80">
                 Each new trader improves the models, fueling the next wave of organic growth.
               </p>
@@ -1115,26 +1038,25 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Roadmap</p>
               <h2 id="roadmap-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                From proven architecture to public beta and first recurring revenue.
+                Proven architecture → public beta → recurring revenue.
               </h2>
             </header>
 
             <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Timeline Overview · Q4 2025 → Q1 2027</h3>
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Timeline · Q4 2025 → Q1 2027</h3>
               <p class="text-[15px] leading-relaxed text-steel">
-                The roadmap transitions 1DES from <span class="text-ivory font-medium">validated technology</span> to a
-                <span class="text-ivory font-medium">public beta and recurring revenue</span> over five quarters.
+                Five-quarter sprint from tech validation to public beta and recurring revenue.
               </p>
             </section>
 
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Key Phases</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>✅ <strong class="text-ivory">Q4 2025 – Q1 2026:</strong> Stability, monitoring, and compliance finalized; pre-seed materials prepared.</li>
-                <li>🟢 <strong class="text-ivory">Q2 2026:</strong> Full-time transition, UX polish, community setup, funding close.</li>
-                <li>🟢 <strong class="text-ivory">Q3 2026:</strong> Private → public beta; 50–100 early traders onboarded.</li>
-                <li>🟢 <strong class="text-ivory">Q4 2026:</strong> Platform scaling, first 100 paying users, €2–3K MRR.</li>
-                <li>🟢 <strong class="text-ivory">Q1 2027:</strong> 200 active users, model optimization, €5K MRR, seed-ready metrics.</li>
+                <li>✅ <strong class="text-ivory">Q4 2025 – Q1 2026:</strong> Stabilize stack, finish compliance, prep pre-seed.</li>
+                <li>🟢 <strong class="text-ivory">Q2 2026:</strong> Full-time shift, UX polish, community + funding close.</li>
+                <li>🟢 <strong class="text-ivory">Q3 2026:</strong> Private beta → public beta, onboard 50–100 traders.</li>
+                <li>🟢 <strong class="text-ivory">Q4 2026:</strong> Scale platform, first 100 paying users, €2–3K MRR.</li>
+                <li>🟢 <strong class="text-ivory">Q1 2027:</strong> 200 active users, €5K MRR, seed-ready metrics.</li>
               </ul>
             </section>
 
@@ -1203,7 +1125,7 @@
     </section>
 
     <!-- Slide 11 — Competition Landscape -->
-    <section id="competition" class="slide snap-start" data-bg="2" aria-labelledby="competition-title">
+    <section id="competition" class="slide snap-start" data-bg="3" aria-labelledby="competition-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -1212,37 +1134,36 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Competition</p>
               <h2 id="competition-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                Bridging the gap between simple trading bots and institutional AI systems.
+                Bridging retail bots and institutional AI.
               </h2>
             </header>
 
             <!-- Market Overview -->
             <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Landscape Overview</h3>
+              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Overview</h3>
               <div class="grid grid-cols-3 gap-x-4 text-[13px]">
                 <div class="font-semibold text-ivory">Segment</div>
                 <div class="font-semibold text-ivory">Examples</div>
-                <div class="font-semibold text-ivory">Typical Weakness</div>
+                <div class="font-semibold text-ivory">Weakness</div>
 
                 <div>Retail Bots</div>
-                <div class="text-steel">3Commas, Pionex, Cryptohopper</div>
-                <div class="text-steel/80">Fixed strategies, low transparency, custodial risk.</div>
+                <div class="text-steel">3Commas, Pionex</div>
+                <div class="text-steel/80">Static strategies, custodial risk.</div>
 
                 <div>Copy-Trading</div>
-                <div class="text-steel">eToro, BingX, Bitget</div>
-                <div class="text-steel/80">Human-dependent, inconsistent, limited AI.</div>
+                <div class="text-steel">eToro, BingX</div>
+                <div class="text-steel/80">Human variability, limited AI.</div>
 
                 <div>Quant Platforms</div>
-                <div class="text-steel">Mudrex, Kryll, Tradetron</div>
+                <div class="text-steel">Mudrex, Kryll</div>
                 <div class="text-steel/80">Coding required, no adaptive learning.</div>
 
                 <div>Institutional AI</div>
-                <div class="text-steel">Hedge fund proprietary tools</div>
-                <div class="text-steel/80">Closed access, capital-intensive.</div>
+                <div class="text-steel">Proprietary desks</div>
+                <div class="text-steel/80">Closed, capital-heavy, no access.</div>
               </div>
             </section>
 
-            <!-- Where 1DES Wins -->
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Where 1DES Wins</h3>
               <div class="overflow-x-auto text-[13px]">
@@ -1250,31 +1171,25 @@
                   <thead class="text-steel/70">
                     <tr>
                       <th class="pb-1">Feature</th>
-                      <th class="pb-1">Retail Bots</th>
-                      <th class="pb-1">Institutional AI</th>
+                      <th class="pb-1">Bots</th>
+                      <th class="pb-1">Institutional</th>
                       <th class="pb-1 text-aqua">1DES</th>
                     </tr>
                   </thead>
                   <tbody class="text-steel">
                     <tr><td>Adaptive AI (LSTM + PatchTST)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Event-Driven Architecture (&lt;100 ms)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Non-Custodial Execution</td><td>⚠️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Model Transparency</td><td>✖️</td><td>✖️</td><td>✔️</td></tr>
-                    <tr><td>Scalable Cloud-Native Stack</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Retail Accessibility (€19–99 / mo)</td><td>✔️</td><td>✖️</td><td>✔️</td></tr>
+                    <tr><td>Event-driven stack (&lt;100 ms)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Non-custodial execution</td><td>⚠️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Transparent models</td><td>✖️</td><td>✖️</td><td>✔️</td></tr>
+                    <tr><td>Retail pricing (€19–99)</td><td>✔️</td><td>✖️</td><td>✔️</td></tr>
                   </tbody>
                 </table>
               </div>
             </section>
 
-            <section class="space-y-2">
-              <p class="text-[15px] leading-relaxed text-steel">
-                1DES merges institutional-grade AI precision with the accessibility and transparency retail traders demand.
-              </p>
-              <p class="italic text-[13px] text-steel/80">
-                Transparent like open source. Precise like institutional systems. Scalable for everyday users.
-              </p>
-            </section>
+            <p class="text-[14px] leading-relaxed text-steel">
+              1DES blends institutional intelligence with retail transparency and access.
+            </p>
           </div>
 
           <!-- RIGHT: Visual -->
@@ -1313,7 +1228,7 @@
     </section>
 
     <!-- Slide 12 — Team -->
-    <section id="team" class="slide snap-start" data-bg="3" aria-labelledby="team-title">
+    <section id="team" class="slide snap-start" data-bg="2" aria-labelledby="team-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -1431,7 +1346,7 @@
     </section>
 
     <!-- Slide 13 — Funding & Use of Funds -->
-    <section id="funding" class="slide snap-start" data-bg="4" aria-labelledby="funding-title">
+    <section id="funding" class="slide snap-start" data-bg="1" aria-labelledby="funding-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -1440,7 +1355,7 @@
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Funding & Use of Funds</p>
               <h2 id="funding-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                Pre-seed round to execute full-time, launch beta, and reach first revenue milestone.
+                Pre-seed to go full-time, launch beta, hit revenue.
               </h2>
             </header>
 
@@ -1462,42 +1377,13 @@
               <p class="text-[13px] text-steel/80">Goal by end of runway: Public beta launched · 100 paying users · €2K–€5K MRR</p>
             </section>
 
-            <!-- Use of Funds -->
+            <!-- Milestone Impact -->
             <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Use of Funds</h3>
-              <div class="grid grid-cols-3 gap-x-3 text-[13px] leading-relaxed">
-                <div class="font-semibold text-ivory">Category</div>
-                <div class="font-semibold text-ivory">Allocation</div>
-                <div class="font-semibold text-ivory">Description</div>
-
-                <div>Product & ML Dev</div>
-                <div class="text-aqua font-medium">40%</div>
-                <div class="text-steel/80">Finalize AI modules and model optimization.</div>
-
-                <div>Marketing & Community</div>
-                <div class="text-aqua font-medium">25%</div>
-                <div class="text-steel/80">Brand, education, referral program.</div>
-
-                <div>Infrastructure & Ops</div>
-                <div class="text-aqua font-medium">15%</div>
-                <div class="text-steel/80">Cloud scalability for 10K+ users.</div>
-
-                <div>Legal & Compliance</div>
-                <div class="text-aqua font-medium">10%</div>
-                <div class="text-steel/80">GDPR, MiCA, exchange agreements.</div>
-
-                <div>Reserve & Contingency</div>
-                <div class="text-aqua font-medium">10%</div>
-                <div class="text-steel/80">Buffer for partnerships or extended runway.</div>
-              </div>
-            </section>
-
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Milestone Impact</h3>
-              <ul class="space-y-1 text-[14px]">
-                <li>💡 <strong class="text-ivory">Funding Secured (Q2 2026):</strong> Team full-time, beta ready for private test.</li>
-                <li>🚀 <strong class="text-ivory">+6 Months:</strong> Public beta live, first traders onboarded.</li>
-                <li>📈 <strong class="text-ivory">+12 Months:</strong> 100 paying users, €2–5K MRR, seed-ready metrics.</li>
+              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Milestone Impact</h3>
+              <ul class="space-y-2 text-[13px] text-steel">
+                <li>💡 <span class="text-ivory font-semibold">Q2 2026</span> — founders full-time, private beta hardened.</li>
+                <li>🚀 <span class="text-ivory font-semibold">Month 6–7</span> — public beta live, 50–100 traders.</li>
+                <li>📈 <span class="text-ivory font-semibold">Month 12</span> — 100 paying users, €2–5K MRR, seed-ready pack.</li>
               </ul>
             </section>
 
@@ -1525,36 +1411,32 @@
                   stroke="#6B7280" stroke-width="40" stroke-dasharray="25 565" stroke-dashoffset="-225" fill="none" />
                 <text x="160" y="165" text-anchor="middle" class="fill-ivory font-semibold text-[13px]">€150–200K</text>
               </svg>
-              <div class="grid grid-cols-2 gap-3 mt-4 text-[12px] text-steel/80">
-                <div>🧠 Product & ML – 40%</div>
-                <div>📣 Marketing – 25%</div>
-                <div>⚙️ Infra – 15%</div>
-                <div>⚖️ Legal – 10%</div>
-                <div>💰 Reserve – 10%</div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-[12px] text-steel/80">
+                <div>
+                  <p class="text-ivory font-semibold">🧠 Product & ML – 40%</p>
+                  <p>Model tuning, beta polish, AI modules.</p>
+                </div>
+                <div>
+                  <p class="text-ivory font-semibold">📣 Marketing – 25%</p>
+                  <p>Brand, education, referral engine.</p>
+                </div>
+                <div>
+                  <p class="text-ivory font-semibold">⚙️ Infra – 15%</p>
+                  <p>Cloud scalability & data ingestion.</p>
+                </div>
+                <div>
+                  <p class="text-ivory font-semibold">⚖️ Legal – 10%</p>
+                  <p>GDPR, MiCA, exchange agreements.</p>
+                </div>
+                <div>
+                  <p class="text-ivory font-semibold">💰 Reserve – 10%</p>
+                  <p>Partnership buffer / extra runway.</p>
+                </div>
               </div>
             </div>
 
-            <!-- Milestone Flow -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Milestone Flow</h4>
-              <svg viewBox="0 0 580 120" class="w-full" role="img" aria-label="Funding milestone flow">
-                <defs>
-                  <marker id="arrowFlow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
-                  </marker>
-                </defs>
-                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrowFlow)">
-                  <line x1="60" y1="60" x2="520" y2="60" />
-                </g>
-                <g text-anchor="middle" class="fill-ivory text-[12px]">
-                  <circle cx="100" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="100" y="64">Team</text>
-                  <circle cx="240" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="240" y="64">Beta</text>
-                  <circle cx="380" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="380" y="64">Users</text>
-                  <circle cx="520" cy="60" r="16" class="fill-aqua/20 stroke-aqua"/><text x="520" y="64">Revenue</text>
-                </g>
-              </svg>
-              <p class="mt-3 text-[11px] text-steel/70">Lean pre-seed round → full-time team → public beta → first users → recurring revenue.</p>
-            </div>
+            <!-- Milestone Impact -->
+            <!-- Right column now only contains the donut chart -->
           </aside>
         </div>
       </div>
@@ -1563,7 +1445,7 @@
     </section>
 
     <!-- Slide 14 — The Ask & Next Milestones -->
-    <section id="the-ask" class="slide snap-start" data-bg="3" aria-labelledby="ask-title">
+    <section id="the-ask" class="slide snap-start" data-bg="2" aria-labelledby="ask-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -1613,24 +1495,6 @@
               </div>
             </section>
 
-            <!-- Funding Impact -->
-            <section class="space-y-2">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Impact</h3>
-              <ul class="space-y-1 text-[15px] leading-relaxed">
-                <li>🚀 Converts five years of R&D into a commercially validated beta.</li>
-                <li>🤖 Demonstrates AI precision & transparency in live trading.</li>
-                <li>🌍 Builds early community & brand trust for long-term growth.</li>
-              </ul>
-            </section>
-
-            <section class="space-y-2">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Investor Return Path</h3>
-              <p class="text-[15px] text-steel leading-relaxed">
-                <span class="text-ivory font-medium">Seed Round (Q2 2027):</span> Target €1M–€1.5M to scale user acquisition and
-                expand to other asset classes (FX, equities).
-              </p>
-            </section>
-
             <p class="italic text-[13px] text-steel/80">
               1DES is not an idea — it’s a working system at the edge of launch.
             </p>
@@ -1645,32 +1509,26 @@
               </blockquote>
             </div>
 
-            <!-- Milestone Flow -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Milestone Path</h4>
-              <svg viewBox="0 0 600 120" class="w-full" role="img" aria-label="Milestone flow: team to revenue to seed">
-                <defs>
-                  <marker id="arrowAsk" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                    <path d="M0,0 L0,6 L6,3 z" fill="currentColor"/>
-                  </marker>
-                </defs>
-                <g class="stroke-aqua/80 fill-none" stroke-width="2" marker-end="url(#arrowAsk)">
-                  <line x1="60" y1="60" x2="540" y2="60"/>
-                </g>
-                <g text-anchor="middle" class="fill-ivory text-[12px] font-semibold">
-                  <circle cx="100" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="100" y="64">Team</text>
-                  <circle cx="220" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="220" y="64">Beta</text>
-                  <circle cx="340" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="340" y="64">Users</text>
-                  <circle cx="460" cy="60" r="18" class="fill-aqua/20 stroke-aqua"/><text x="460" y="64">MRR</text>
-                  <circle cx="580" cy="60" r="18" class="fill-amber/30 stroke-amber"/><text x="580" y="64">Seed</text>
-                </g>
-              </svg>
-              <p class="mt-3 text-[11px] text-steel/70 text-center">
-                Full-time Team → Beta → Paying Users → MRR → Seed Readiness
-              </p>
+            <!-- Funding Impact -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 space-y-3">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Funding Impact</h4>
+              <ul class="space-y-1 text-[14px] text-steel">
+                <li>🚀 Turns five years of R&D into a validated beta.</li>
+                <li>🤖 Demonstrates AI precision & transparency in live trading.</li>
+                <li>🌍 Builds early community & brand trust for long-term growth.</li>
+              </ul>
             </div>
 
-            <p class="text-center text-[12px] text-steel/80 mt-3">Lean • Measurable • Investor-Ready</p>
+            <!-- Investor Return Path -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 space-y-4">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Investor Return Path</h4>
+              <p class="text-[14px] text-ivory font-semibold">Seed Round (Q2 2027) — target €1M–€1.5M.</p>
+              <ul class="space-y-1 text-[13px] text-steel">
+                <li>📈 KPI: €10K+ MRR, 500+ paying users.</li>
+                <li>🌐 Expansion into FX and equities signals.</li>
+                <li>🤝 Institutional partnerships + compliance stack complete.</li>
+              </ul>
+            </div>
           </aside>
         </div>
       </div>
@@ -1679,7 +1537,7 @@
     </section>
 
     <!-- Slide 15 — Closing / Contact -->
-    <section id="closing-contact" class="slide snap-start" data-bg="2" aria-labelledby="closing-contact-title">
+    <section id="closing-contact" class="slide snap-start" data-bg="3" aria-labelledby="closing-contact-title">
       <div class="slide-inner">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
@@ -1706,7 +1564,13 @@
               </ul>
             </section>
 
-            <!-- Contact -->
+            <p class="italic text-[13px] text-steel/80">
+              Five years of building — one year to launch. Join us in making intelligent, transparent trading accessible to everyone.
+            </p>
+          </div>
+
+          <!-- RIGHT: Contact -->
+          <aside class="lg:col-span-6 space-y-6">
             <section class="space-y-4">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Contact</h3>
               <div class="grid sm:grid-cols-2 gap-3 text-[14px]">
@@ -1724,7 +1588,11 @@
                 </div>
                 <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
                   <p class="text-steel text-xs uppercase tracking-wide">Connect</p>
-                  <p class="text-ivory font-medium"><a href="https://x.com/the1des" target="_blank">X</a> / <a href="https://www.linkedin.com/company/1des/" target="_blank">LinkedIn</a> / <a href="https://t.me/The1DES" target="_blank">Telegram</a></p>
+                  <p class="text-ivory font-medium">
+                    <a href="https://x.com/the1des" target="_blank">X</a> /
+                    <a href="https://www.linkedin.com/company/1des/" target="_blank">LinkedIn</a> /
+                    <a href="https://t.me/The1DES" target="_blank">Telegram</a>
+                  </p>
                 </div>
               </div>
 
@@ -1737,51 +1605,6 @@
                 </a>
               </div>
             </section>
-
-            <p class="italic text-[13px] text-steel/80">
-              Five years of building — one year to launch. Join us in making intelligent, transparent trading accessible to everyone.
-            </p>
-          </div>
-
-          <!-- RIGHT: Visual -->
-          <aside class="lg:col-span-6 space-y-6">
-            <!-- Hero graphic: dark gradient + faint trading lines + center statement -->
-            <div class="relative overflow-hidden rounded-xl border border-steel/30 bg-gradient-to-br from-navy/80 to-charcoal/60 p-6">
-              <svg viewBox="0 0 640 260" class="absolute inset-0 w-full h-full" aria-hidden="true">
-                <!-- faint grid -->
-                <g class="stroke-steel/10" stroke-width="1">
-                  <line x1="0" y1="40" x2="640" y2="40"/><line x1="0" y1="80" x2="640" y2="80"/>
-                  <line x1="0" y1="120" x2="640" y2="120"/><line x1="0" y1="160" x2="640" y2="160"/>
-                  <line x1="0" y1="200" x2="640" y2="200"/>
-                </g>
-                <!-- faint chart line -->
-                <path d="M0 190 C80 160, 120 210, 180 150 S300 110, 360 160 480 120, 640 150" class="fill-none stroke-aqua/30" stroke-width="2"/>
-              </svg>
-              <div class="relative text-center py-16">
-                <h3 class="text-2xl sm:text-3xl font-semibold text-ivory">
-                  AI trading that learns as fast as the market.
-                </h3>
-                <p class="mt-2 text-[13px] text-steel/80">Adaptive • Transparent • Non-custodial</p>
-              </div>
-            </div>
-
-            <!-- Mini world map with team locations -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Where we are</h4>
-              <svg viewBox="0 0 640 220" class="w-full" role="img" aria-label="Team locations: Maastricht, Barcelona, Rasht, Karaj">
-                <!-- simplified world outline (hinted) -->
-                <path d="M60,120 C100,90 150,100 200,110 C230,115 260,120 300,110 C340,100 380,90 420,100 C470,115 520,120 560,115"
-                      class="fill-none stroke-steel/25" stroke-width="2"/>
-                <!-- pins -->
-                <!-- Maastricht (~x:260,y:95), Barcelona (~x:245,y:110) -->
-                <circle cx="260" cy="95" r="5" class="fill-aqua"/><text x="268" y="98" class="fill-ivory text-[10px]">Maastricht</text>
-                <circle cx="245" cy="110" r="5" class="fill-aqua"/><text x="253" y="113" class="fill-ivory text-[10px]">Barcelona</text>
-                <!-- Rasht/Karaj (Iran ~x:380–390,y:110) -->
-                <circle cx="388" cy="110" r="5" class="fill-aqua"/><text x="396" y="113" class="fill-ivory text-[10px]">Rasht</text>
-                <circle cx="395" cy="118" r="5" class="fill-aqua"/><text x="403" y="121" class="fill-ivory text-[10px]">Karaj</text>
-              </svg>
-              <p class="mt-2 text-[11px] text-steel/70">Global, lean, and synchronized.</p>
-            </div>
           </aside>
         </div>
       </div>
