@@ -970,10 +970,10 @@
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
           <!-- LEFT: Narrative -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-6">
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Competition</p>
-              <h2 id="competition-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+              <h2 id="competition-title" class="text-4xl sm:text-[2.5rem] font-extrabold leading-tight text-ivory max-w-2xl">
                 Bridging retail bots and institutional AI.
               </h2>
             </header>
@@ -981,7 +981,7 @@
             <!-- Market Overview -->
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Market Overview</h3>
-              <div class="grid grid-cols-3 gap-x-4 text-[13px]">
+              <div class="grid grid-cols-3 gap-x-3 text-[12px] md:text-[13px] leading-relaxed">
                 <div class="font-semibold text-ivory">Segment</div>
                 <div class="font-semibold text-ivory">Examples</div>
                 <div class="font-semibold text-ivory">Weakness</div>
@@ -1003,58 +1003,56 @@
                 <div class="text-steel/80">Closed, capital-heavy, no access.</div>
               </div>
             </section>
-
-            <section class="space-y-3">
-              <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Where 1DES Wins</h3>
-              <div class="overflow-x-auto text-[13px]">
-                <table class="min-w-full text-left border-separate border-spacing-x-3">
-                  <thead class="text-steel/70">
-                    <tr>
-                      <th class="pb-1">Feature</th>
-                      <th class="pb-1">Bots</th>
-                      <th class="pb-1">Institutional</th>
-                      <th class="pb-1 text-aqua">1DES</th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-steel">
-                    <tr><td>Adaptive AI (LSTM + PatchTST)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Event-driven stack (&lt;100 ms)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Non-custodial execution</td><td>⚠️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Transparent models</td><td>✖️</td><td>✖️</td><td>✔️</td></tr>
-                    <tr><td>Retail pricing (€19–99)</td><td>✔️</td><td>✖️</td><td>✔️</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <p class="text-[14px] leading-relaxed text-steel">
-              1DES blends institutional intelligence with retail transparency and access.
-            </p>
           </div>
 
           <!-- RIGHT: Visual -->
-          <aside class="lg:col-span-6 space-y-6">
-            <!-- 2x2 Matrix -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Positioning Map</h4>
-              <svg viewBox="0 0 520 360" class="w-full" role="img" aria-label="Competition matrix">
-                <!-- axes -->
-                <line x1="80" y1="300" x2="440" y2="300" class="stroke-steel/30" stroke-width="2"/>
-                <line x1="80" y1="300" x2="80" y2="60" class="stroke-steel/30" stroke-width="2"/>
-                <text x="260" y="330" class="fill-steel text-[11px]">Transparency / Accessibility →</text>
-                <text x="20" y="100" transform="rotate(-90,20,100)" class="fill-steel text-[11px]">↑ Intelligence / Automation</text>
+          <aside class="lg:col-span-6 space-y-5">
+            <!-- Map + wins combined -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 space-y-4">
+              <div>
+                <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-2">Positioning Map</h4>
+                <svg viewBox="0 0 520 280" class="w-full" role="img" aria-label="Competition matrix">
+                  <!-- axes -->
+                  <line x1="70" y1="220" x2="430" y2="220" class="stroke-steel/30" stroke-width="2"/>
+                  <line x1="70" y1="220" x2="70" y2="60" class="stroke-steel/30" stroke-width="2"/>
+                  <text x="250" y="245" class="fill-steel text-[10px]">Transparency / Accessibility →</text>
+                  <text x="18" y="100" transform="rotate(-90,18,100)" class="fill-steel text-[10px]">↑ Intelligence / Automation</text>
 
-                <!-- competitors -->
-                <circle cx="150" cy="270" r="14" class="fill-steel/40"/><text x="150" y="274" text-anchor="middle" class="fill-steel text-[10px]">Bots</text>
-                <circle cx="200" cy="230" r="14" class="fill-steel/40"/><text x="200" y="234" text-anchor="middle" class="fill-steel text-[10px]">Copy</text>
-                <circle cx="240" cy="180" r="14" class="fill-steel/40"/><text x="240" y="184" text-anchor="middle" class="fill-steel text-[10px]">Quant</text>
-                <circle cx="420" cy="80" r="14" class="fill-steel/40"/><text x="420" y="84" text-anchor="middle" class="fill-steel text-[10px]">Funds</text>
+                  <!-- competitors -->
+                  <circle cx="135" cy="205" r="12" class="fill-steel/40"/><text x="135" y="209" text-anchor="middle" class="fill-steel text-[9px]">Bots</text>
+                  <circle cx="180" cy="175" r="12" class="fill-steel/40"/><text x="180" y="179" text-anchor="middle" class="fill-steel text-[9px]">Copy</text>
+                  <circle cx="225" cy="140" r="12" class="fill-steel/40"/><text x="225" y="144" text-anchor="middle" class="fill-steel text-[9px]">Quant</text>
+                  <circle cx="400" cy="80" r="12" class="fill-steel/40"/><text x="400" y="84" text-anchor="middle" class="fill-steel text-[9px]">Funds</text>
 
-                <!-- 1DES highlight -->
-                <circle cx="360" cy="150" r="20" class="fill-aqua/30 stroke-aqua stroke-[2]"/>
-                <text x="360" y="155" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">1DES</text>
-              </svg>
-              <p class="mt-3 text-[11px] text-steel/70">Where transparency meets intelligence — 1DES sits between retail accessibility and institutional precision.</p>
+                  <!-- 1DES highlight -->
+                  <circle cx="330" cy="120" r="18" class="fill-aqua/30 stroke-aqua stroke-[2]"/>
+                  <text x="330" y="125" text-anchor="middle" class="fill-ivory text-[11px] font-semibold">1DES</text>
+                </svg>
+                <p class="mt-2 text-[11px] text-steel/70">Where transparency meets intelligence — 1DES sits between retail accessibility and institutional precision.</p>
+              </div>
+
+              <div class="space-y-2">
+                <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Where 1DES Wins</h4>
+                <div class="overflow-x-auto text-[12px]">
+                  <table class="min-w-full text-left border-separate border-spacing-x-3">
+                    <thead class="text-steel/70">
+                      <tr>
+                        <th class="pb-1">Feature</th>
+                        <th class="pb-1">Bots</th>
+                        <th class="pb-1">Institutional</th>
+                        <th class="pb-1 text-aqua">1DES</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-steel">
+                      <tr><td>Adaptive AI (LSTM + PatchTST)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                      <tr><td>Event-driven stack (&lt;100 ms)</td><td>✖️</td><td>✔️</td><td>✔️</td></tr>
+                      <tr><td>Non-custodial execution</td><td>⚠️</td><td>✔️</td><td>✔️</td></tr>
+                      <tr><td>Transparent models</td><td>✖️</td><td>✖️</td><td>✔️</td></tr>
+                      <tr><td>Retail pricing (€19–99)</td><td>✔️</td><td>✖️</td><td>✔️</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
 
             <div class="text-[12px] text-steel/80 italic">
@@ -1073,33 +1071,37 @@
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
           <!-- LEFT: Narrative -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-6">
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Team</p>
-              <h2 id="team-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+              <h2 id="team-title" class="text-4xl sm:text-[2.5rem] font-extrabold leading-tight text-ivory max-w-2xl">
                 A small, senior team turning years of experience into one powerful trading brain.
               </h2>
             </header>
 
             <!-- Team DNA -->
-            <section class="space-y-3">
+            <section class="space-y-2">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Team DNA</h3>
-              <ul class="space-y-2 text-[15px] leading-relaxed">
-                <li>Technical-first founders — hands-on engineering.</li>
-                <li>20+ years combined experience across software, AI, and trading.</li>
-                <li>Execution-driven — one-year path from funding to traction.</li>
-                <li>Lean, distributed, and synchronized across 3 cities.</li>
+              <ul class="space-y-1.5 text-[14px] leading-relaxed">
+                <li>Technical-first, hands-on founders.</li>
+                <li>20+ years across software, AI, and trading.</li>
+                <li>Execution-driven; synchronized across 3 cities.</li>
               </ul>
             </section>
 
             <!-- Advisory & Network -->
-            <section class="space-y-3">
+            <section class="space-y-2">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Advisory & Network (planned)</h3>
-              <ul class="space-y-2 text-[15px] leading-relaxed text-steel">
-                <li>Trading Advisor — EU market-maker quant.</li>
-                <li>Compliance Advisor — MiCA / GDPR specialist.</li>
-                <li>Strategic Partnerships — data providers & exchanges.</li>
-              </ul>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-[14px] text-steel leading-relaxed">
+                <div>
+                  <p>Trading Advisor — EU market-maker quant.</p>
+                  <p>Compliance Advisor — MiCA / GDPR specialist.</p>
+                </div>
+                <div>
+                  <p>Strategic Partnerships — data providers & exchanges.</p>
+                  <p>Growth network — X, Discord, quant communities.</p>
+                </div>
+              </div>
             </section>
 
             <p class="italic text-[13px] text-steel/80">
@@ -1109,75 +1111,76 @@
 
           <!-- RIGHT: Visual — Profile Cards -->
           <aside class="lg:col-span-6 space-y-4">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <!-- Founder 1 -->
-              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-                <div class="flex items-center gap-3">
-                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">B</div>
-                  <div>
-                    <h4 class="text-ivory font-semibold">Bahman</h4>
-                    <p class="text-steel text-[12px]">Team Lead · Barcelona</p>
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5">
+              <div class="grid sm:grid-cols-2 gap-3">
+                <!-- Founder 1 -->
+                <article class="rounded-lg border border-steel/25 bg-charcoal/20 p-4 space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">B</div>
+                    <div>
+                      <h4 class="text-ivory font-semibold">Bahman</h4>
+                      <p class="text-steel text-[12px]">Team Lead · Barcelona</p>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-3 text-[13px] text-steel space-y-1">
-                  <li>20 years in software engineering</li>
-                  <li>Founded multiple startups</li>
-                  <li>4+ years in crypto systems and trading automation</li>
-                </ul>
-              </article>
+                  <ul class="text-[12px] text-steel space-y-1">
+                    <li>20 yrs software engineering</li>
+                    <li>Founded multiple startups</li>
+                    <li>4+ yrs crypto systems & automation</li>
+                  </ul>
+                </article>
 
-              <!-- Founder 2 -->
-              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-                <div class="flex items-center gap-3">
-                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
-                  <div>
-                    <h4 class="text-ivory font-semibold">Keyvan</h4>
-                    <p class="text-steel text-[12px]">CTO · Rasht</p>
+                <!-- Founder 2 -->
+                <article class="rounded-lg border border-steel/25 bg-charcoal/20 p-4 space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
+                    <div>
+                      <h4 class="text-ivory font-semibold">Keyvan</h4>
+                      <p class="text-steel text-[12px]">CTO · Rasht</p>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-3 text-[13px] text-steel space-y-1">
-                  <li>10+ years backend, DevOps, MLOps & ML engineering</li>
-                  <li>Architected event-driven trading stack</li>
-                  <li>Python · Kafka · TF Serving · Cloud Ops</li>
-                </ul>
-              </article>
+                  <ul class="text-[12px] text-steel space-y-1">
+                    <li>10+ yrs backend, DevOps, MLOps</li>
+                    <li>Architected event-driven trading stack</li>
+                    <li>Python · Kafka · TF Serving · Cloud Ops</li>
+                  </ul>
+                </article>
 
-              <!-- Founder 3 -->
-              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-                <div class="flex items-center gap-3">
-                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">M</div>
-                  <div>
-                    <h4 class="text-ivory font-semibold">Mehdi</h4>
-                    <p class="text-steel text-[12px]">Senior Software Engineer · Karaj</p>
+                <!-- Founder 3 -->
+                <article class="rounded-lg border border-steel/25 bg-charcoal/20 p-4 space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">M</div>
+                    <div>
+                      <h4 class="text-ivory font-semibold">Mehdi</h4>
+                      <p class="text-steel text-[12px]">Senior Software Engineer · Karaj</p>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-3 text-[13px] text-steel space-y-1">
-                  <li>ML models · data science · feature engineering</li>
-                  <li>Algorithm optimization · signal calibration</li>
-                  <li>Research and automation integration</li>
-                </ul>
-              </article>
+                  <ul class="text-[12px] text-steel space-y-1">
+                    <li>ML models · data science · feature engineering</li>
+                    <li>Algorithm optimization · signal calibration</li>
+                    <li>Research & automation integration</li>
+                  </ul>
+                </article>
 
-              <!-- ML Engineer -->
-              <article class="rounded-xl border border-steel/30 bg-charcoal/30 p-4">
-                <div class="flex items-center gap-3">
-                  <div class="h-12 w-12 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
-                  <div>
-                    <h4 class="text-ivory font-semibold">Kasra</h4>
-                    <p class="text-steel text-[12px]">ML Engineer · Maastricht</p>
+                <!-- ML Engineer -->
+                <article class="rounded-lg border border-steel/25 bg-charcoal/20 p-4 space-y-2">
+                  <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-full bg-aqua/20 text-aqua grid place-items-center font-semibold">K</div>
+                    <div>
+                      <h4 class="text-ivory font-semibold">Kasra</h4>
+                      <p class="text-steel text-[12px]">ML Engineer · Maastricht</p>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-3 text-[13px] text-steel space-y-1">
-                  <li>Time-series: PatchTST · LSTM</li>
-                  <li>Unsupervised pattern discovery</li>
-                  <li>Model tuning · drawdown control</li>
-                </ul>
-              </article>
+                  <ul class="text-[12px] text-steel space-y-1">
+                    <li>Time-series: PatchTST · LSTM</li>
+                    <li>Unsupervised pattern discovery</li>
+                    <li>Model tuning · drawdown control</li>
+                  </ul>
+                </article>
+              </div>
+              <p class="text-center text-[12px] text-steel/80 mt-3">
+                Small team. Deep expertise. Proven delivery.
+              </p>
             </div>
-
-            <p class="text-center text-[12px] text-steel/80 mt-2">
-              Small team. Deep expertise. Proven delivery.
-            </p>
           </aside>
         </div>
       </div>
@@ -1191,18 +1194,18 @@
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
           <!-- LEFT: Narrative -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-6">
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Funding & Use of Funds</p>
-              <h2 id="funding-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+              <h2 id="funding-title" class="text-4xl sm:text-[2.5rem] font-extrabold leading-tight text-ivory max-w-2xl">
                 Pre-seed to go full-time, launch beta, hit revenue.
               </h2>
             </header>
 
             <!-- Funding Overview -->
-            <section class="space-y-3">
+            <section class="space-y-2">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Funding Overview</h3>
-              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[15px] leading-relaxed">
+              <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-[14px] leading-relaxed">
                 <div class="text-steel text-xs uppercase tracking-wide">Round</div>
                 <div class="text-ivory">Pre-Seed</div>
                 <div class="text-steel text-xs uppercase tracking-wide">Valuation (pre-money)</div>
@@ -1218,9 +1221,9 @@
             </section>
 
             <!-- Milestone Impact -->
-            <section class="space-y-3">
+            <section class="space-y-2">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Milestone Impact</h3>
-              <ul class="space-y-2 text-[13px] text-steel">
+              <ul class="space-y-1.5 text-[13px] text-steel">
                 <li>💡 <span class="text-ivory font-semibold">Q2 2026</span> — founders full-time, private beta hardened.</li>
                 <li>🚀 <span class="text-ivory font-semibold">Month 6–7</span> — public beta live, 50–100 traders.</li>
                 <li>📈 <span class="text-ivory font-semibold">Month 12</span> — 100 paying users, €2–5K MRR, seed-ready pack.</li>
@@ -1233,25 +1236,25 @@
           </div>
 
           <!-- RIGHT: Visual -->
-          <aside class="lg:col-span-6 space-y-6">
+          <aside class="lg:col-span-6 space-y-5">
             <!-- Donut Chart -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 flex flex-col items-center">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-4">Use of Funds Allocation</h4>
-              <svg viewBox="0 0 320 320" class="w-72 h-72" role="img" aria-label="Use of funds donut chart">
-                <circle cx="160" cy="160" r="80" stroke="rgba(255,255,255,0.1)" stroke-width="40" fill="none" />
-                <circle cx="160" cy="160" r="80"
-                  stroke="#00A7A7" stroke-width="40" stroke-dasharray="100 565" stroke-dashoffset="0" fill="none" />
-                <circle cx="160" cy="160" r="80"
-                  stroke="#14B8A6" stroke-width="40" stroke-dasharray="62.5 565" stroke-dashoffset="-100" fill="none" />
-                <circle cx="160" cy="160" r="80"
-                  stroke="#94A3B8" stroke-width="40" stroke-dasharray="37.5 565" stroke-dashoffset="-162.5" fill="none" />
-                <circle cx="160" cy="160" r="80"
-                  stroke="#ECA72C" stroke-width="40" stroke-dasharray="25 565" stroke-dashoffset="-200" fill="none" />
-                <circle cx="160" cy="160" r="80"
-                  stroke="#6B7280" stroke-width="40" stroke-dasharray="25 565" stroke-dashoffset="-225" fill="none" />
-                <text x="160" y="165" text-anchor="middle" class="fill-ivory font-semibold text-[13px]">€150–200K</text>
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 flex flex-col items-center">
+              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory mb-3">Use of Funds Allocation</h4>
+              <svg viewBox="0 0 300 300" class="w-64 h-64" role="img" aria-label="Use of funds donut chart">
+                <circle cx="150" cy="150" r="75" stroke="rgba(255,255,255,0.1)" stroke-width="36" fill="none" />
+                <circle cx="150" cy="150" r="75"
+                  stroke="#00A7A7" stroke-width="36" stroke-dasharray="100 565" stroke-dashoffset="0" fill="none" />
+                <circle cx="150" cy="150" r="75"
+                  stroke="#14B8A6" stroke-width="36" stroke-dasharray="62.5 565" stroke-dashoffset="-100" fill="none" />
+                <circle cx="150" cy="150" r="75"
+                  stroke="#94A3B8" stroke-width="36" stroke-dasharray="37.5 565" stroke-dashoffset="-162.5" fill="none" />
+                <circle cx="150" cy="150" r="75"
+                  stroke="#ECA72C" stroke-width="36" stroke-dasharray="25 565" stroke-dashoffset="-200" fill="none" />
+                <circle cx="150" cy="150" r="75"
+                  stroke="#6B7280" stroke-width="36" stroke-dasharray="25 565" stroke-dashoffset="-225" fill="none" />
+                <text x="150" y="155" text-anchor="middle" class="fill-ivory font-semibold text-[13px]">€150–200K</text>
               </svg>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-[12px] text-steel/80">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 text-[12px] text-steel/80 w-full">
                 <div>
                   <p class="text-ivory font-semibold">🧠 Product & ML – 40%</p>
                   <p>Model tuning, beta polish, AI modules.</p>
@@ -1290,18 +1293,18 @@
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
           <!-- LEFT: Narrative -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-6">
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">The Ask & Next Milestones</p>
-              <h2 id="ask-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
-                One year of execution to go from ready → revenue.
+              <h2 id="ask-title" class="text-4xl sm:text-[2.5rem] font-extrabold leading-tight text-ivory max-w-2xl">
+                One year to go from ready → revenue.
               </h2>
             </header>
 
             <!-- The Ask -->
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Ask</h3>
-              <p class="text-[15px] leading-relaxed text-steel">
+              <p class="text-[14px] leading-relaxed text-steel">
                 We’re raising <span class="text-ivory font-medium">€150K–€200K</span> at a
                 <span class="text-ivory font-medium">€1.8M–€2.5M</span> pre-money valuation to fund
                 one year of full-time execution — culminating in a live beta,
@@ -1312,7 +1315,7 @@
             <!-- What This Round Achieves -->
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">What This Round Achieves</h3>
-              <div class="grid grid-cols-3 gap-x-3 text-[13px] leading-relaxed">
+              <div class="grid grid-cols-3 gap-x-3 text-[12px] sm:text-[13px] leading-relaxed">
                 <div class="font-semibold text-ivory">Milestone</div>
                 <div class="font-semibold text-ivory">Timeline</div>
                 <div class="font-semibold text-ivory">Outcome</div>
@@ -1341,18 +1344,18 @@
           </div>
 
           <!-- RIGHT: Visual -->
-          <aside class="lg:col-span-6 space-y-6">
+          <aside class="lg:col-span-6 space-y-5">
             <!-- Central Quote -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 text-center">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 text-center">
               <blockquote class="text-2xl font-semibold text-ivory leading-snug">
                 “We’ve built the foundation — this round powers the launch.”
               </blockquote>
             </div>
 
             <!-- Funding Impact -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 space-y-3">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 space-y-3">
               <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Funding Impact</h4>
-              <ul class="space-y-1 text-[14px] text-steel">
+              <ul class="space-y-1 text-[13px] text-steel">
                 <li>🚀 Turns five years of R&D into a validated beta.</li>
                 <li>🤖 Demonstrates AI precision & transparency in live trading.</li>
                 <li>🌍 Builds early community & brand trust for long-term growth.</li>
@@ -1360,7 +1363,7 @@
             </div>
 
             <!-- Investor Return Path -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6 space-y-4">
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 space-y-3">
               <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Investor Return Path</h4>
               <p class="text-[14px] text-ivory font-semibold">Seed Round (Q2 2027) — target €1M–€1.5M.</p>
               <ul class="space-y-1 text-[13px] text-steel">
@@ -1420,7 +1423,7 @@
                 </div>
                 <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
                   <p class="text-steel text-xs uppercase tracking-wide">Website</p>
-                  <a href="https://www.1des.com" class="text-ivory font-medium hover:underline" target="_blank" rel="noopener">www.1des.com</a>
+                  <a href="https://1des.com" class="text-ivory font-medium hover:underline" target="_blank" rel="noopener">1des.com</a>
                 </div>
                 <div class="rounded-lg border border-steel/30 bg-charcoal/30 p-3">
                   <p class="text-steel text-xs uppercase tracking-wide">Locations</p>

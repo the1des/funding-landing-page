@@ -150,6 +150,30 @@ html,body{height:100%}
   padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
 }
 
+/* Competition slide rhythm */
+#competition .slide-inner{
+  padding-top: clamp(4rem, 8vh, 5.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+/* Team slide rhythm */
+#team .slide-inner{
+  padding-top: clamp(4rem, 8vh, 5.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+/* Funding slide rhythm */
+#funding .slide-inner{
+  padding-top: clamp(4rem, 8vh, 5.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+/* Ask slide rhythm */
+#the-ask .slide-inner{
+  padding-top: clamp(4rem, 8vh, 5.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
 
 /* === Global slide rhythm & typography (ADD THIS) ========================= */
 
