@@ -144,6 +144,12 @@ html,body{height:100%}
   padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
 }
 
+/* Traction slide tighter rhythm */
+#traction-validation .slide-inner{
+  padding-top: clamp(4rem, 8vh, 5.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
 
 /* === Global slide rhythm & typography (ADD THIS) ========================= */
 

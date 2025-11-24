@@ -711,38 +711,48 @@
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-14 items-start">
 
           <!-- LEFT: Narrative -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-6">
             <header>
               <p class="text-xs tracking-[0.2em] uppercase text-aqua">Traction & Validation</p>
-              <h2 id="traction-validation-title" class="text-4xl sm:text-5xl font-extrabold leading-tight text-ivory">
+              <h2 id="traction-validation-title" class="text-4xl sm:text-[2.5rem] font-extrabold leading-tight text-ivory max-w-xl">
                 Traction from first prototype to proven trading brain.
               </h2>
             </header>
 
             <!-- Product Milestones -->
-            <section class="space-y-4">
+            <section class="space-y-2">
               <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Our Journey</h3>
-              <ul class="space-y-3 text-[15px] leading-relaxed">
-                <li>
-                  <strong class="text-ivory">2020–2022 · Prototype</strong><br>
-                  Late-night build proved automated AI decisions could outperform static rules.
-                </li>
-                <li>
-                  <strong class="text-ivory">2022–2025 · Rebuild</strong><br>
-                  Re-architected into an event-driven, cloud-native stack that retrains live for 10K+ users.
-                </li>
-              </ul>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[15px] leading-relaxed">
+                <div class="space-y-1">
+                  <p class="text-ivory font-semibold">2020–2022 · Prototype</p>
+                  <p class="text-steel">Late-night build proved AI decisions could beat static rules.</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-ivory font-semibold">2022–2025 · Rebuild</p>
+                  <p class="text-steel">Event-driven, cloud-native stack retrains live for 10K+ users.</p>
+                </div>
+              </div>
             </section>
 
-            <section class="space-y-2">
-              <h3 class="text-sm tracking-widest uppercase text-amber font-semibold">Technical Highlights</h3>
-              <ul class="text-[15px] leading-relaxed space-y-1">
-                <li>🔁 Continuous feedback loop for live model calibration.</li>
-                <li>🌐 Multi-exchange ready — Binance + MEXC integrated.</li>
-                <li>📊 Model governance dashboard in development.</li>
-                <li>⚙️ Lean DevOps pipeline for rapid deployment.</li>
-              </ul>
-            </section>
+            <!-- Metric cards (moved left) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-lg font-semibold text-aqua">&gt; 99 %</p>
+                <p class="text-[11px] text-steel/80">Uptime</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-lg font-semibold text-aqua">&lt; 100 ms</p>
+                <p class="text-[11px] text-steel/80">Latency</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-lg font-semibold text-aqua">10 K+</p>
+                <p class="text-[11px] text-steel/80">Scalability</p>
+              </div>
+              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
+                <p class="text-lg font-semibold text-aqua">&lt; €100</p>
+                <p class="text-[11px] text-steel/80">Infra Cost</p>
+              </div>
+            </div>
 
             <p class="italic text-[13px] text-steel/80">
               Five years of obsession turned into one ready product — proven, lean, and built to grow.
@@ -750,41 +760,19 @@
           </div>
 
           <!-- RIGHT: Visual -->
-          <aside class="lg:col-span-6 space-y-6">
-            <!-- Two-Phase Timeline -->
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Development Timeline</h4>
-              <svg viewBox="0 0 620 140" class="w-full mt-4" role="img" aria-label="Timeline 2020–2022 to 2022–2025">
-                <!-- horizontal line -->
-                <line x1="60" y1="70" x2="560" y2="70" class="stroke-steel/40" stroke-width="2" />
-                <!-- milestones -->
-                <circle cx="160" cy="70" r="10" class="fill-aqua"/>
-                <circle cx="460" cy="70" r="10" class="fill-aqua"/>
-                <text x="120" y="45" class="fill-ivory text-[12px] font-semibold">2020–2022</text>
-                <text x="410" y="45" class="fill-ivory text-[12px] font-semibold">2022–2025</text>
-                <text x="160" y="100" text-anchor="middle" class="fill-steel text-[11px]">MVP + Model Tests</text>
-                <text x="460" y="100" text-anchor="middle" class="fill-steel text-[11px]">Full System Redesign</text>
-              </svg>
-            </div>
-
-            <!-- Metric Cards -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&gt; 99 %</p>
-                <p class="text-[11px] text-steel/80">Uptime</p>
+          <aside class="lg:col-span-6 space-y-5">
+            <!-- Technical highlights + metrics combined -->
+            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-5 space-y-4">
+              <div>
+                <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Technical Highlights</h4>
+                <ul class="mt-3 text-[14px] leading-relaxed space-y-2">
+                  <li>🔁 Continuous feedback loop for live model calibration.</li>
+                  <li>🌐 Multi-exchange ready — Binance + MEXC integrated.</li>
+                  <li>📊 Model governance dashboard in development.</li>
+                  <li>⚙️ Lean DevOps pipeline for rapid deployment.</li>
+                </ul>
               </div>
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&lt; 100 ms</p>
-                <p class="text-[11px] text-steel/80">Latency</p>
-              </div>
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">10 K+</p>
-                <p class="text-[11px] text-steel/80">Scalability</p>
-              </div>
-              <div class="p-3 rounded-lg bg-charcoal/40 border border-steel/30">
-                <p class="text-xl font-semibold text-aqua">&lt; €100</p>
-                <p class="text-[11px] text-steel/80">Infra Cost</p>
-              </div>
+          
             </div>
 
             <!-- What's Working -->
@@ -855,12 +843,6 @@
               </ul>
             </section>
 
-            <!-- Marketing Flywheel -->
-            <section class="space-y-2">
-              <p class="italic text-[13px] text-steel/80">
-                Each new trader improves the models, fueling the next wave of organic growth.
-              </p>
-            </section>
           </div>
 
           <!-- RIGHT: Visuals -->
@@ -922,6 +904,12 @@
                 <text x="310" y="105" text-anchor="middle" class="fill-steel text-[11px]">Smarter AI from data → stronger transparency → compounding growth</text>
               </svg>
             </div>
+            <!-- Marketing Flywheel -->
+            <section class="space-y-2">
+              <p class="italic text-[13px] text-steel/80">
+                Each new trader improves the models, fueling the next wave of organic growth.
+              </p>
+            </section>
           </aside>
         </div>
       </div>
@@ -950,6 +938,15 @@
               </p>
             </section>
 
+            
+
+            <p class="italic text-[13px] text-steel/80">
+              2025 – Technology ready → 2026 – Go live → 2027 – Revenue validated.
+            </p>
+          </div>
+
+          <!-- RIGHT: Visual Timeline -->
+          <aside class="lg:col-span-6 space-y-6">
             <section class="space-y-3">
               <h3 class="text-sm tracking-widest uppercase text-aqua font-semibold">Key Phases</h3>
               <ul class="space-y-2 text-[15px] leading-relaxed">
@@ -960,64 +957,6 @@
                 <li>🟢 <strong class="text-ivory">Q1 2027:</strong> 200 active users, €5K MRR, seed-ready metrics.</li>
               </ul>
             </section>
-
-            <p class="italic text-[13px] text-steel/80">
-              2025 – Technology ready → 2026 – Go live → 2027 – Revenue validated.
-            </p>
-          </div>
-
-          <!-- RIGHT: Visual Timeline -->
-          <aside class="lg:col-span-6 space-y-6">
-            <div class="rounded-xl border border-steel/30 bg-charcoal/30 p-6">
-              <h4 class="text-[13px] font-semibold uppercase tracking-wide text-ivory">Road to Beta · Timeline</h4>
-              <svg viewBox="0 0 780 260" class="w-full mt-4" role="img" aria-label="Q4 2025 to Q1 2027 roadmap">
-                <!-- Base timeline line -->
-                <line x1="60" y1="70" x2="720" y2="70" class="stroke-steel/30" stroke-width="2"/>
-
-                <!-- Milestone markers -->
-                <circle cx="140" cy="70" r="10" class="fill-aqua"/>
-                <circle cx="260" cy="70" r="10" class="fill-aqua"/>
-                <circle cx="380" cy="70" r="10" class="fill-amber/70"/>
-                <circle cx="500" cy="70" r="10" class="fill-amber/70"/>
-                <circle cx="620" cy="70" r="10" class="fill-amber/70"/>
-
-                <!-- Quarter labels -->
-                <text x="140" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q4 2025</text>
-                <text x="260" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q1 2026</text>
-                <text x="380" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q2 2026</text>
-                <text x="500" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q3 2026</text>
-                <text x="620" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q4 2026</text>
-                <text x="720" y="50" text-anchor="middle" class="fill-ivory text-[12px] font-semibold">Q1 2027</text>
-
-                <!-- Track Titles -->
-                <text x="80" y="110" class="fill-steel text-[11px] font-semibold uppercase">Product / Tech</text>
-                <text x="80" y="160" class="fill-steel text-[11px] font-semibold uppercase">Growth / Market</text>
-                <text x="80" y="210" class="fill-steel text-[11px] font-semibold uppercase">Funding / Milestone</text>
-
-                <!-- Track lines -->
-                <line x1="140" y1="110" x2="700" y2="110" class="stroke-steel/20" stroke-width="1"/>
-                <line x1="140" y1="160" x2="700" y2="160" class="stroke-steel/20" stroke-width="1"/>
-                <line x1="140" y1="210" x2="700" y2="210" class="stroke-steel/20" stroke-width="1"/>
-
-                <!-- Product / Tech track -->
-                <text x="220" y="114" class="fill-steel text-[10px]">Internal Testing</text>
-                <text x="380" y="114" class="fill-steel text-[10px]">UX Polish · Dashboard</text>
-                <text x="500" y="114" class="fill-steel text-[10px]">Private → Public Beta</text>
-                <text x="620" y="114" class="fill-steel text-[10px]">Optimization</text>
-
-                <!-- Growth / Market track -->
-                <text x="380" y="164" class="fill-steel text-[10px]">Community Setup</text>
-                <text x="500" y="164" class="fill-steel text-[10px]">Referral Program</text>
-                <text x="620" y="164" class="fill-steel text-[10px]">200 Active Users</text>
-
-                <!-- Funding / Milestone track -->
-                <text x="220" y="214" class="fill-steel text-[10px]">Pre-seed Prep</text>
-                <text x="380" y="214" class="fill-steel text-[10px]">Funding Close</text>
-                <text x="500" y="214" class="fill-steel text-[10px]">First Revenue</text>
-                <text x="620" y="214" class="fill-steel text-[10px]">Seed Data Pack</text>
-              </svg>
-              <p class="mt-3 text-[11px] text-steel/70">2025 – Technology ready → 2026 – Go live → 2027 – Revenue validated.</p>
-            </div>
           </aside>
         </div>
       </div>
