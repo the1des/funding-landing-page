@@ -1,0 +1,24 @@
+{
+  "name": "funding-landing-page",
+  "version": "1.0.0",
+  "description": "Adaptive investor-deck landing page for **1DES**, an AI-driven trading platform.   The site is a single-page experience that uses scroll-snapping “slides” to walk investors through the story: problem, product, traction, roadmap, team, and funding ask.",
+  "main": "scripts.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./tailwind.input.css -o ./tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the1des/funding-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/the1des/funding-landing-page/issues"
+  },
+  "homepage": "https://github.com/the1des/funding-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
