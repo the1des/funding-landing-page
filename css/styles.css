@@ -179,17 +179,20 @@ html,body{height:100%}
   line-height: 1.05;
 }
 .stacked-headline .cover-line-1{
-  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
   color: var(--c-ivory);
+  white-space: nowrap;
 }
 .stacked-headline .cover-line-2{
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(2.0rem, 4.6vw, 3.0rem);
   color: var(--c-aqua);
+  white-space: nowrap;
 }
 .stacked-headline .cover-line-3{
-  font-size: clamp(1.9rem, 4.4vw, 3.2rem);
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
   color: var(--c-steel);
   font-weight: 700;
+  white-space: nowrap;
 }
 .stacked-headline .solution-line-1{
   font-size: clamp(2.4rem, 5.5vw, 3.8rem);
