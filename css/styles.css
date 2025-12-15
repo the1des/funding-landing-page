@@ -144,12 +144,6 @@ html,body{height:100%}
   padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
 }
 
-/* Traction slide tighter rhythm */
-#traction-validation .slide-inner{
-  padding-top: clamp(4rem, 8vh, 5.5rem);
-  padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
-}
-
 /* Competition slide rhythm */
 #competition .slide-inner{
   padding-top: clamp(4rem, 8vh, 5.5rem);
@@ -175,6 +169,173 @@ html,body{height:100%}
 #the-ask .slide-inner{
   padding-top: clamp(4rem, 8vh, 5.5rem);
   padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+/* Stackable headline helper */
+.stacked-headline{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.35rem;
+  line-height: 1.05;
+}
+.stacked-headline .cover-line-1{
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .cover-line-2{
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  color: var(--c-aqua);
+}
+.stacked-headline .cover-line-3{
+  font-size: clamp(1.9rem, 4.4vw, 3.2rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .solution-line-1{
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .solution-line-2{
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  color: var(--c-aqua);
+}
+.stacked-headline .solution-line-3{
+  font-size: clamp(1.85rem, 4.5vw, 3.0rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .product-line-1{
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .product-line-2{
+  font-size: clamp(1.6rem, 4.2vw, 2.6rem);
+  color: var(--c-aqua);
+}
+.stacked-headline .product-line-3{
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .tech-line-1{
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .tech-line-2{
+  font-size: clamp(1.9rem, 4.6vw, 2.9rem);
+  color: var(--c-aqua);
+}
+.stacked-headline .tech-line-3{
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .market-line-1{
+  font-size: clamp(2.0rem, 5vw, 3.1rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .market-line-2{
+  font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .biz-line-1{
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .biz-line-2{
+  font-size: clamp(1.45rem, 3.4vw, 2.0rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .gtm-line-1{
+  font-size: clamp(2.0rem, 5vw, 3.1rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .gtm-line-2{
+  font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .gtm-line-3{
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .competition-line-1{
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .competition-line-2{
+  font-size: clamp(1.45rem, 3.6vw, 2.2rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .team-line-1{
+  font-size: clamp(1.7rem, 4.2vw, 2.6rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .team-line-2{
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .team-line-3{
+  font-size: clamp(1.35rem, 3.6vw, 1.9rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .funding-line-1{
+  font-size: clamp(1.8rem, 4.4vw, 2.7rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .funding-line-2{
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+.stacked-headline .funding-line-3{
+  font-size: clamp(1.35rem, 3.6vw, 1.9rem);
+  color: var(--c-steel);
+  font-weight: 700;
+}
+.stacked-headline .closing-line-1{
+  font-size: clamp(2.4rem, 5.2vw, 3.6rem);
+  color: var(--c-ivory);
+}
+.stacked-headline .closing-line-2{
+  font-size: clamp(2.0rem, 4.6vw, 3.0rem);
+  color: var(--c-aqua);
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  .stacked-headline .biz-line-1{ white-space: nowrap; }
+}
+
+/* Problem slide stacked headline */
+#problem-opportunity-title{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.35rem;
+  line-height: 1.05;
+}
+#problem-opportunity-title span:nth-child(1){
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  color: var(--c-ivory);
+}
+#problem-opportunity-title span:nth-child(2){
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
+  color: var(--c-ivory);
+}
+#problem-opportunity-title span:nth-child(3){
+  font-size: clamp(2.35rem, 6vw, 3.4rem);
+  color: var(--c-aqua);
+}
+#problem-opportunity-title span:nth-child(4){
+  font-size: clamp(1.85rem, 4.5vw, 2.6rem);
+  color: var(--c-steel);
+  font-weight: 700;
 }
 
 
