@@ -5,6 +5,7 @@
   const drawer = document.getElementById('sectionDrawer');
   const drawerToggle = document.getElementById('drawerToggle');
   const drawerClose = document.getElementById('drawerClose');
+  let isDemoModalOpen = false;
 
   /* Reveal on enter */
   const io = ('IntersectionObserver' in window) ? new IntersectionObserver((entries)=>{
@@ -62,6 +63,7 @@
 
   /* Keyboard navigation */
   window.addEventListener('keydown', (e)=>{
+    if (isDemoModalOpen) return;
     if (['ArrowDown','PageDown','ArrowRight'].includes(e.key)){
       e.preventDefault(); goToIndex(visibleIndex()+1);
     }
@@ -110,4 +112,46 @@
   }
   window.addEventListener('hashchange', offsetHash);
   offsetHash();
+
+  /* Demo modal */
+  const demoModal = document.getElementById('demoModal');
+  const playDemoButton = document.getElementById('playDemoButton');
+  const demoVideo = document.getElementById('demoVideo');
+  const demoCloseTargets = demoModal ? demoModal.querySelectorAll('[data-close]') : [];
+
+  const closeDemo = ()=>{
+    if (!demoModal) return;
+    demoModal.classList.remove('open');
+    demoModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    isDemoModalOpen = false;
+    if (demoVideo){
+      demoVideo.pause();
+      demoVideo.currentTime = 0;
+    }
+    if (playDemoButton) playDemoButton.focus();
+  };
+
+  const openDemo = ()=>{
+    if (!demoModal) return;
+    demoModal.classList.add('open');
+    demoModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    isDemoModalOpen = true;
+    if (demoVideo){
+      demoVideo.currentTime = 0;
+      demoVideo.play().catch(()=>{ /* autoplay may be blocked; ok */ });
+    }
+  };
+
+  playDemoButton?.addEventListener('click', openDemo);
+  demoCloseTargets.forEach(btn => btn.addEventListener('click', closeDemo));
+  demoModal?.addEventListener('click', (e)=>{
+    if (e.target === demoModal) closeDemo();
+  });
+  window.addEventListener('keydown', (e)=>{
+    if (e.key === 'Escape' && isDemoModalOpen){
+      closeDemo();
+    }
+  });
 })();
